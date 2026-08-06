@@ -1,279 +1,34 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useNavigation } from '@/store/navigation'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
+import { HomePage } from '@/components/pages/HomePage'
+import { FestoPage } from '@/components/pages/FestoPage'
+import { ProductsPage } from '@/components/pages/ProductsPage'
+import { IndustriesPage } from '@/components/pages/IndustriesPage'
+import { AboutPage } from '@/components/pages/AboutPage'
+import { ContactPage } from '@/components/pages/ContactPage'
 
-type Page = 'home' | 'festo' | 'products' | 'industries' | 'about' | 'contact'
+const PAGES = {
+  home: <HomePage />,
+  festo: <FestoPage />,
+  products: <ProductsPage />,
+  industries: <IndustriesPage />,
+  about: <AboutPage />,
+  contact: <ContactPage />,
+} as const
 
-const NAV = [
-  { l: 'Home', p: 'home' as Page },
-  { l: 'Products', p: 'products' as Page, dd: [
-    { l: 'Pressure Measurement', p: 'products' as Page },
-    { l: 'Temperature Measurement', p: 'products' as Page },
-    { l: 'Flow Measurement', p: 'products' as Page },
-    { l: 'Level Measurement', p: 'products' as Page },
-    { l: 'Festo Germany', p: 'festo' as Page },
-  ]},
-  { l: 'Festo Germany', p: 'festo' as Page },
-  { l: 'About', p: 'about' as Page },
-  { l: 'Contact Us', p: 'contact' as Page },
-]
+export default function Page() {
+  const { currentPage } = useNavigation()
 
-const IND = [
-  { n: 'Oil & Gas', d: 'Process valve assemblies and control systems for upstream, midstream, and downstream operations.' },
-  { n: 'Chemical Industry', d: 'Corrosion-resistant automation solutions for chemical processing and petrochemical plants.' },
-  { n: 'Food & Beverage', d: 'Hygienic automation components meeting food-grade standards for packaging and processing.' },
-  { n: 'Water & Wastewater', d: 'Reliable valve automation and flow control for water treatment and distribution systems.' },
-  { n: 'Pharmaceutical', d: 'Precision control solutions for biotech, pharmaceutical, and cosmetic manufacturing processes.' },
-  { n: 'Automotive', d: 'High-speed pneumatic and electric automation for automotive assembly and manufacturing lines.' },
-  { n: 'Pulp & Paper', d: 'Robust automation components for the demanding pulp and paper production environment.' },
-  { n: 'Electronics & Assembly', d: 'Precision handling and cleanroom-compatible automation for electronics manufacturing.' },
-  { n: 'Power & Energy', d: 'Automation solutions for power generation, hydrogen, and renewable energy systems.' },
-  { n: 'Laboratory Automation', d: 'Compact, precise automation components for laboratory and analytical equipment.' },
-  { n: 'Mineral Processing', d: 'Heavy-duty valve assemblies and actuators for mining and mineral processing.' },
-  { n: 'Medical Technology', d: 'Precision automation for medical device manufacturing and healthcare equipment.' },
-]
-
-const STATS = [
-  { v: '3.2 Bn Euro', l: 'Annual Turnover' }, { v: '20,100+', l: 'Employees' }, { v: '300,000+', l: 'Customers' },
-  { v: '176', l: 'Countries' }, { v: '33,000+', l: 'Catalogue Products' }, { v: '100+', l: 'Patents/Year' },
-  { v: '61', l: 'Subsidiaries' }, { v: '24h', l: 'Delivery' }, { v: '15,000+', l: 'Solutions/Year' }, { v: '1,000+', l: 'Sales Engineers' },
-]
-
-const CERTS = [
-  { n: 'ISO 9001', s: 'All Plants', t: 'Management' }, { n: 'ISO 14001', s: 'All Plants', t: 'Management' },
-  { n: 'OHSAS 18001', s: 'Sao Paulo & Shanghai', t: 'Management' },
-  { n: 'CE', s: 'Europe', t: 'Product', d: 'Safety, EMC, Machinery, Ex-Protection' },
-  { n: 'UL', s: 'North America', t: 'Product', d: 'Industrial equipment safety' },
-  { n: 'CSA', s: 'Canada', t: 'Product', d: 'Industrial equipment safety' },
-  { n: 'CCC', s: 'China', t: 'Product', d: 'EMC & electrical safety' },
-  { n: 'EAC (GOST)', s: 'Eurasian Union', t: 'Product', d: 'Safety & Ex-Protection' },
-  { n: 'GL', s: 'Ships/Offshore', t: 'Product', d: 'Ship/offshore equipment' },
-  { n: 'C-Tick', s: 'Australia', t: 'Product', d: 'Industrial equipment EMC' },
-]
-
-const CHK = <svg className="w-4 h-4 text-[#00aa73] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-const ARROW = <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-const EXT = <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-const CNT = 'mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8'
-const UL = 'text-[12px] font-normal uppercase tracking-[0.15em]'
-const H2UL = 'text-[12px] font-semibold uppercase tracking-[0.15em]'
-
-function Header({ cp, nav }: { cp: Page; nav: (p: Page) => void }) {
-  const [mo, setMo] = useState(false)
-  const [hov, setHov] = useState<string | null>(null)
-  const [sc, setSc] = useState(false)
-  const dt = useRef<NodeJS.Timeout | null>(null)
-  useEffect(() => { const h = () => setSc(window.scrollY > 10); window.addEventListener('scroll', h); return () => window.removeEventListener('scroll', h) }, [])
-  const mh = useCallback((l: string) => { if (dt.current) clearTimeout(dt.current); setHov(l) }, [])
-  const ml = useCallback(() => { dt.current = setTimeout(() => setHov(null), 150) }, [])
-  const go = (p: Page) => { nav(p); setHov(null); setMo(false) }
   return (
-    <header className="sticky top-0 z-50 w-full bg-white" style={sc ? { boxShadow: '0 2px 8px rgba(0,0,0,0.15)' } : {}}>
-      <div className="bg-white"><div className={CNT}><div className="flex items-center justify-between h-[80px]">
-        <button onClick={() => go('home')} className="flex flex-col items-start h-full justify-center shrink-0">
-          <img src="/ati-logo.png" alt="Automation Technology" className="h-[36px] w-auto" />
-          <span className="text-[10px] text-[#999] tracking-[0.05em] mt-0.5 hidden sm:block">Open New Automation Mind</span>
-        </button>
-        <div className="hidden lg:flex items-center gap-1 flex-1 ml-8">
-          <nav className="flex items-center">{NAV.map(item => (
-            <div key={item.l} className="relative" onMouseEnter={() => item.dd && mh(item.l)} onMouseLeave={() => item.dd && ml()}>
-              <button onClick={() => !item.dd && go(item.p)} className={`px-3 py-2 text-[13px] font-normal uppercase tracking-[0.08em] transition-colors whitespace-nowrap ${cp === item.p ? 'text-[#00aa73] border-b-2 border-[#00aa73]' : 'text-[#1c1c1c] hover:text-[#00aa73]'}`}>
-                {item.l}{item.dd && <svg className="inline-block w-3 h-3 ml-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>}
-              </button>
-              {item.dd && hov === item.l && (
-                <div className="absolute top-full left-0 mt-0 bg-white border border-gray-200 shadow-lg min-w-[250px] py-2" onMouseEnter={() => mh(item.l)} onMouseLeave={() => ml()}>
-                  {item.dd.map(sub => (
-                    <button key={sub.l} onClick={() => go(sub.p)} className="block w-full text-left px-4 py-2.5 text-[13px] text-[#1c1c1c] hover:text-[#00aa73] hover:bg-gray-50 transition-colors">{sub.l}</button>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}</nav>
-        </div>
-        <div className="flex items-center gap-3">
-          <button onClick={() => go('contact')} className="hidden sm:inline-flex px-4 py-1.5 text-[12px] font-normal uppercase tracking-[0.05em] text-[#00aa73] border border-[#00aa73] hover:bg-[#00aa73] hover:text-white transition-all">Contact Us</button>
-          <button onClick={() => setMo(!mo)} className="lg:hidden p-2 text-[#1c1c1c] hover:text-[#00aa73]" aria-label="Menu">{mo ? <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg> : <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>}</button>
-        </div>
-      </div></div></div>
-      {mo && (
-        <div className="lg:hidden border-t border-gray-200 bg-white">
-          <div className={CNT}>
-            <div className="py-4 space-y-1">
-              {NAV.map(item => (
-                <div key={item.l}>
-                  <button onClick={() => !item.dd && go(item.p)} className={`block w-full text-left px-3 py-2.5 text-[13px] font-normal uppercase tracking-[0.08em] transition-colors ${cp === item.p ? 'text-[#00aa73] bg-[#f0faf6]' : 'text-[#1c1c1c] hover:text-[#00aa73] hover:bg-gray-50'}`}>{item.l}</button>
-                  {item.dd && (
-                    <div className="ml-4 space-y-1">
-                      {item.dd.map(sub => (<button key={sub.l} onClick={() => go(sub.p)} className="block w-full text-left px-3 py-2 text-[12px] text-[#666] hover:text-[#00aa73] hover:bg-gray-50">{sub.l}</button>))}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
-    </header>
+    <div className="min-h-screen flex flex-col bg-white text-[#1c1c1c]">
+      <Header />
+      <div className="flex-1" id="contact">
+        {PAGES[currentPage]}
+      </div>
+      <Footer />
+    </div>
   )
-}
-
-function Footer({ nav }: { nav: (p: Page) => void }) {
-  return (
-    <footer className="bg-[#1a1a1a] text-[#ccc]"><div className={CNT}><div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <img src="/ati-logo.png" alt="Automation Technology" className="h-[32px] w-auto mb-4 brightness-0 invert" />
-        <p className="text-sm text-[#999] leading-relaxed mb-4">Pakistan's leading supplier of Industrial Automation, Pneumatic, Hydraulic, Filtration and Motion Control Equipment & Instrumentation.</p>
-        <div className="space-y-2 text-sm text-[#999]">
-          <div className="flex items-start gap-2"><svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg><span>S-42, 2nd Floor, Gulberg Center, Main Boulevard, Gulberg-III Lahore-54660-Pakistan</span></div>
-          <div className="flex items-center gap-2"><svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg><a href="tel:+924235750039" className="hover:text-[#00aa73] transition-colors">+92-42-35750039</a></div>
-          <div className="flex items-center gap-2"><svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg><a href="mailto:Info@automationtechnology.com.pk" className="hover:text-[#00aa73] transition-colors">Info@automationtechnology.com.pk</a></div>
-        </div>
-      </div>
-      <div><h3 className={`${H2UL} text-white mb-4`}>Company</h3><ul className="space-y-2.5">{['Leadership','Company History','Our Purpose','Sustainability'].map(i => (<li key={i}><button onClick={() => nav('about')} className="text-sm text-[#999] hover:text-[#00aa73] transition-colors">{i}</button></li>))}</ul></div>
-      <div><h3 className={`${H2UL} text-white mb-4`}>Useful Links</h3><ul className="space-y-2.5">{['Privacy Policy','Terms & Conditions','Contact Us','Latest News','Our Sitemap'].map(i => (<li key={i}><button onClick={() => nav('contact')} className="text-sm text-[#999] hover:text-[#00aa73] transition-colors">{i}</button></li>))}</ul></div>
-      <div><h3 className={`${H2UL} text-white mb-4`}>Industries</h3><ul className="space-y-2.5">{['Oil & Gas','Power','Mining & Metal','Food & Beverage','Pulp & Paper'].map(i => (<li key={i}><button onClick={() => nav('industries')} className="text-sm text-[#999] hover:text-[#00aa73] transition-colors">{i}</button></li>))}</ul></div>
-    </div><div className="border-t border-[#333] mt-10 pt-6 flex flex-col sm:flex-row justify-between gap-3"><p className="text-[11px] text-[#666]">&copy; {new Date().getFullYear()} <strong className="text-[#999]">Automation Technology</strong>. All rights reserved.</p><span className="text-[11px] text-[#555]">Authorized Festo Distributor in Pakistan</span></div></div></footer>
-  )
-}
-
-function Home({ nav }: { nav: (p: Page) => void }) {
-  return (<main>
-    <section className="relative bg-[#1a1a1a] text-white overflow-hidden"><div className="absolute inset-0 opacity-30"><img src="/products/pressure-facility.jpg" alt="" className="w-full h-full object-cover" /></div><div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/90 to-transparent" /><div className={`relative ${CNT} py-24 sm:py-32 lg:py-40`}><div className="max-w-2xl"><p className={`${UL} text-[#00aa73] mb-4`}>Industrial Automation Solutions</p><h1 className="text-3xl sm:text-4xl lg:text-[42px] font-light leading-tight mb-6">Enhancing Safety and Reliability with Advanced Automation</h1><p className="text-base text-gray-300 leading-relaxed mb-8 max-w-xl font-light">Automation Technology combines advanced technologies, industry-leading expertise and an insatiable curiosity about the world to create sustainable solutions for our customers.</p><div className="flex flex-wrap gap-4"><button onClick={() => nav('festo')} className="inline-flex items-center px-6 py-3 bg-[#00aa73] hover:bg-[#008c5e] text-white text-[13px] font-normal uppercase tracking-[0.05em] transition-colors">Explore Festo Products <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></button><button onClick={() => nav('contact')} className="inline-flex items-center px-6 py-3 border border-white/40 hover:border-white text-white text-[13px] font-normal uppercase tracking-[0.05em] transition-colors">Contact Us</button></div></div></div></section>
-    <section className="py-16 lg:py-20"><div className={CNT}><h2 className="text-xl sm:text-2xl lg:text-[28px] font-light text-[#1c1c1c] leading-relaxed max-w-4xl mx-auto text-center">Integrating advanced technology, expert industry insight, and a passion for innovation to develop a product portfolio that provides sustainable, reliable solutions. We are dedicated to maximizing efficiencies, optimizing applications, and delivering the industry's widest range of automation solutions in Pakistan.</h2></div></section>
-    <section className="py-16 bg-[#f5f5f5]"><div className={CNT}><p className={`${H2UL} text-[#666] mb-3`}>Our Principals</p><h3 className="text-2xl font-normal text-[#1c1c1c] mb-10">Brands We Represent</h3><div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">{[{t:'FESTO',s:'Authorized Distributor',d:'World-leading supplier of industrial automation with 33,000+ products, 100+ patents/year, presence in 176 countries.',c:'#00aa73',l:'https://www.festo.com',p:'festo'},{t:'EMERSON',s:'Technology Partner',d:'Global technology and engineering leader providing innovative solutions for industrial, commercial, and residential markets.',c:'#1c1c1c',l:'https://www.emerson.com',p:'home'},{t:'AUTOMATION TECHNOLOGY',s:'Custom Solutions',d:'In-house engineering and integration services for custom automation, system design, and technical training in Pakistan.',c:'#0066cc',l:'',p:'about'}].map(b => (<div key={b.t} className="bg-white p-8 border border-gray-200 hover:border-[#00aa73] transition-colors text-left group"><div className="flex items-center gap-3 mb-4"><div className="w-12 h-12 rounded flex items-center justify-center" style={{ backgroundColor: b.c }}><span className="text-white font-bold text-xl">{b.l === '' ? 'AT' : b.t[0]}</span></div><div><p className="text-[13px] font-semibold text-[#1c1c1c] group-hover:text-[#00aa73] transition-colors uppercase tracking-[0.05em]">{b.t}</p><p className="text-[11px] text-[#999]">{b.s}</p></div></div><p className="text-sm text-[#666] leading-relaxed">{b.d}</p>{b.l && <a href={b.l} target="_blank" rel="noopener noreferrer" className="inline-flex items-center mt-4 text-[12px] uppercase tracking-[0.05em] text-[#00aa73] hover:text-[#008c5e] transition-colors">Visit Website {EXT}</a>}</div>))}</div></div></section>
-    <section className="py-16"><div className={CNT}><p className={`${H2UL} text-[#666] mb-3`}>What We Offer</p><div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">{[{t:'Product Distribution',d:'Authorized Festo distributor with 24h delivery and 33,000+ catalogue components available in Pakistan.'},{t:'System Integration',d:'Custom valve assemblies, pneumatic control cabinets, and complete automation systems tailored to your needs.'},{t:'Technical Support',d:'On-site commissioning, staff training, and third-party PLC integration support across Pakistan.'},{t:'After-Sales Service',d:'FAT testing, freight management, spare parts, and ongoing maintenance support.'}].map(i => (<div key={i.t} className="border border-gray-200 p-6 hover:border-[#00aa73] transition-colors"><h3 className="text-[13px] font-semibold text-[#1c1c1c] mb-2 uppercase tracking-[0.05em]">{i.t}</h3><p className="text-sm text-[#666] leading-relaxed">{i.d}</p></div>))}</div></div></section>
-    <section className="py-16 bg-[#f5f5f5]"><div className={CNT}><p className={`${H2UL} text-[#666] mb-3`}>Discover Products and Services</p><h3 className="text-2xl font-normal text-[#1c1c1c] mb-4">We Help You Find Your Product</h3><p className="text-[#666] text-sm mb-8">What type of measurement are you looking for?</p><div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">{[{t:'Pressure Measurement',p:'products'},{t:'Temperature Measurement',p:'products'},{t:'Flow Measurement',p:'products'},{t:'Level Measurement',p:'products'},{t:'Analysis Measurement',p:'products'},{t:'Density Measurement',p:'products'}].map(m => (<button key={m.t} onClick={() => nav(m.p as Page)} className="bg-white border border-gray-200 p-4 text-center hover:border-[#00aa73] hover:bg-[#f0faf6] transition-all"><p className="text-[13px] font-semibold text-[#1c1c1c]">{m.t}</p></button>))}</div></div></section>
-    <section className="py-16"><div className={CNT}><p className={`${H2UL} text-[#666] mb-3`}>Industry Solutions</p><h3 className="text-2xl font-normal text-[#1c1c1c] mb-2">Automation Technology Solutions by Industry</h3><p className="text-[#666] text-sm mb-10">Delivers industrial solutions purpose-built for the energy, infrastructure, and manufacture sectors, and engineered to drive a sustainable future.</p><div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">{IND.slice(0, 6).map(ind => (<button key={ind.n} onClick={() => nav('industries')} className="group relative overflow-hidden text-left"><div className="aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#1a1a1a] to-[#333]"><div className="w-full h-full flex items-center justify-center p-6"><span className="text-3xl font-light text-white/20">{ind.n}</span></div></div><div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" /><div className="absolute bottom-0 left-0 right-0 p-5"><h3 className="text-lg font-semibold text-white mb-1">{ind.n}</h3><p className="text-sm text-gray-300 line-clamp-2">{ind.d}</p></div></button>))}</div><div className="mt-8 text-center"><button onClick={() => nav('industries')} className="inline-flex items-center text-[13px] font-normal uppercase tracking-[0.05em] text-[#00aa73] hover:text-[#008c5e] transition-colors">View All Industries {ARROW}</button></div></div></section>
-    <section className="py-16 bg-[#1a1a1a] text-white"><div className={`${CNT} text-center`}><h2 className="text-2xl sm:text-3xl font-light mb-4">Ready to Automate?</h2><p className="text-gray-400 max-w-2xl mx-auto mb-8 text-sm">Contact our engineering team to discuss your automation requirements.</p><button onClick={() => nav('contact')} className="inline-flex items-center px-8 py-3 bg-[#00aa73] hover:bg-[#008c5e] text-white text-[13px] font-normal uppercase tracking-[0.05em] transition-colors">Get in Touch</button></div></section>
-  </main>)
-}
-
-function Festo() {
-  const [sc, setSc] = useState(false)
-  return (<main>
-    <section className="relative bg-[#1a1a1a] text-white overflow-hidden"><div className="absolute inset-0 opacity-20"><img src="/festo/festo-hero.webp" alt="" className="w-full h-full object-cover" /></div><div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/95 to-[#1a1a1a]/70" /><div className={`relative ${CNT} py-20 sm:py-28`}><div className="max-w-3xl"><h1 className="text-3xl sm:text-4xl font-light mb-4">FESTO</h1><p className="text-base text-gray-300 leading-relaxed max-w-2xl font-light">The spirit of invention is deeply rooted in our corporate culture. Since our foundation, we have been setting standards in the development of innovative solutions that meet the requirements of our customers. Our goal remains unchanged: to make collaboration between people and machines even better and easier.</p><div className="mt-6"><button onClick={() => setSc(!sc)} className="inline-flex items-center px-6 py-3 bg-[#00aa73] hover:bg-[#008c5e] text-white text-[13px] font-normal uppercase tracking-[0.05em] transition-colors">Request a Quote</button></div></div></div></section>
-
-    <section className="py-16"><div className={CNT}><h2 className="text-2xl font-normal text-[#1c1c1c] mb-4">Prime Movers In The Field Of Automation And Technical Education</h2><p className="text-[#666] text-sm leading-relaxed mb-8 max-w-4xl">Each and every day at Festo, we pursue the goal of making tomorrow's working world more productive, simpler and more sustainable. That is why we develop solutions for automation and technical education that prepare people, companies and organizations for the digital future in production, and for new technologies.</p><img src="/festo/festo-hero.webp" alt="Festo" className="w-full max-w-2xl rounded" /></div></section>
-
-    <section className="py-16 bg-[#f5f5f5]"><div className={CNT}><p className={`${UL} text-[#00aa73] mb-3`}>Actuators and Drives</p>
-    <h2 className="text-2xl font-normal text-[#1c1c1c] mb-10">Product Categories</h2>
-
-    <div className="space-y-12">
-      {/* Pneumatic Cylinders */}
-      <div className="bg-white border border-gray-200 overflow-hidden"><div className="grid grid-cols-1 lg:grid-cols-2"><div className="aspect-[16/10] overflow-hidden"><img src="/festo/pneumatic-cylinders.jpg" alt="Pneumatic Cylinders" className="w-full h-full object-cover" /></div><div className="p-6 sm:p-8"><h3 className="text-xl font-semibold text-[#1c1c1c] mb-3">Pneumatic Cylinders</h3><ul className="space-y-2">{['Piston Rod Cylinders','Rodless Cylinders','Rotary Actuators','Specialty Actuators','Guided Cylinders','Stopper Cylinder and Feed Separator','Clamp Cylinders','Industrial Shock Absorber','Rotary Indexing Table'].map(i => (<li key={i} className="flex items-center gap-2 text-sm text-[#666]">{CHK}<a href="https://www.festo.com/us/en/c/products/actuators-and-drives/pneumatic-cylinders-id_pim135" target="_blank" rel="noopener noreferrer" className="hover:text-[#00aa73] transition-colors">{i}</a></li>))}</ul></div></div></div>
-
-      {/* Electromechanical Actuators */}
-      <div className="bg-white border border-gray-200 overflow-hidden"><div className="grid grid-cols-1 lg:grid-cols-2"><div className="aspect-[16/10] overflow-hidden"><img src="/festo/electromechanical-actuators.jpg" alt="Electromechanical Actuators" className="w-full h-full object-cover" /></div><div className="p-6 sm:p-8"><h3 className="text-xl font-semibold text-[#1c1c1c] mb-3">Electromechanical Actuators</h3><ul className="space-y-2">{['Linear Axes','Electric Cylinders and Slides','Integrated Electromechanical Actuators','Electric Rotary Actuators','Electric Stoppers','Electric Handling Modules','Accessories for Electric Actuators'].map(i => (<li key={i} className="flex items-center gap-2 text-sm text-[#666]">{CHK}<a href="https://www.festo.com/us/en/c/products/actuators-and-drives/electromechanical-actuators-id_pim138" target="_blank" rel="noopener noreferrer" className="hover:text-[#00aa73] transition-colors">{i}</a></li>))}</ul></div></div></div>
-
-      {/* Servopneumatic Positioning Systems */}
-      <div className="bg-white border border-gray-200 overflow-hidden"><div className="grid grid-cols-1 lg:grid-cols-2"><div className="aspect-[16/10] overflow-hidden"><img src="/festo/servopneumatic.jpg" alt="Servopneumatic Positioning" className="w-full h-full object-cover" /></div><div className="p-6 sm:p-8"><h3 className="text-xl font-semibold text-[#1c1c1c] mb-3">Servopneumatic Positioning Systems</h3><ul className="space-y-2">{['Actuators with Feedback','Servo Pneumatic Controllers','Linear Measuring Systems','Proportional Directional Valves','Signal Convertors','Cables and Accessories'].map(i => (<li key={i} className="flex items-center gap-2 text-sm text-[#666]">{CHK}<a href="https://www.festo.com/us/en/c/products/actuators-and-drives/servopneumatic-positioning-systems-id_pim140" target="_blank" rel="noopener noreferrer" className="hover:text-[#00aa73] transition-colors">{i}</a></li>))}</ul></div></div></div>
-    </div></div></section>
-
-    <section className="py-16"><div className={CNT}><div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-      {/* Valves */}
-      <div className="bg-white border border-gray-200 overflow-hidden"><div className="aspect-[16/10] overflow-hidden"><img src="/festo/valves.jpg" alt="Valves" className="w-full h-full object-cover" /></div><div className="p-6 sm:p-8"><h3 className="text-xl font-semibold text-[#1c1c1c] mb-3">Valves and Valve Manifolds</h3><ul className="space-y-2">{['Directional Control Valves','Mechanical & Hand Operated Valves','Shut Off Valves Pneumatic','Pressure Valves','Flow Control Valves','Proportional Valves','Piezo Valves','Process Valves','Pneumatic Controls','Valve Terminals','Accessories for Pneumatic Valves'].map(i => (<li key={i} className="flex items-center gap-2 text-sm text-[#666]">{CHK}<a href="https://www.festo.com/us/en/c/products/valves-and-valve-manifolds-id_pim201" target="_blank" rel="noopener noreferrer" className="hover:text-[#00aa73] transition-colors">{i}</a></li>))}</ul></div></div>
-      {/* VTUX */}
-      <div className="bg-white border border-gray-200 overflow-hidden"><div className="aspect-[16/10] overflow-hidden"><img src="/festo/vtux.webp" alt="VTUX" className="w-full h-full object-cover" /></div><div className="p-6 sm:p-8"><h3 className="text-xl font-semibold text-[#1c1c1c] mb-3">VTUX</h3><p className="text-sm text-[#666] leading-relaxed mb-4">The adaptable valve terminal provides maximum flexibility.</p><img src="/festo/bin-picking.webp" alt="Bin Picking" className="w-full rounded" /></div></div>
-    </div></div></section>
-
-    {/* Authorization */}
-    <section className="py-12 border-b border-gray-200"><div className={CNT}><div className="bg-[#f5f5f5] p-6 sm:p-8"><div className="flex flex-col lg:flex-row gap-8 items-start"><div className="flex-1"><div className="flex items-center gap-3 mb-4"><div className="w-10 h-10 bg-[#00aa73] rounded-full flex items-center justify-center"><svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg></div><div><h2 className="text-lg font-normal text-[#1c1c1c]">Official Authorization Confirmation</h2><p className="text-[11px] text-[#999] uppercase tracking-[0.1em]">Letter of Confirmation from Festo</p></div></div><p className="text-sm text-[#666] leading-relaxed mb-4">This confirms that <strong className="text-[#1c1c1c]">Automation Technology</strong>, S-42, 2nd Floor, Gulberg Center, Main Boulevard, Gulberg-III Lahore-54660-Pakistan, is authorized to sell Festo Industrial Automation products as our official distributor in the territory of Pakistan.</p><div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">{[{t:'Signed by:',v:'Zaid Dababneh, Head of Sales, ME & NE Africa'},{t:'Valid Through:',v:'December 31st, 2026'},{t:'Issued by:',v:'Festo Sanayi ve Ticaret A.S., Istanbul'},{t:'Territory:',v:'Pakistan'}].map(i => (<div key={i.t} className="flex items-start gap-2 text-sm text-[#666]">{CHK}<span><span className="text-[#999]">{i.t} </span><strong className="text-[#1c1c1c]">{i.v}</strong></span></div>))}</div><button onClick={() => setSc(!sc)} className="inline-flex items-center text-[13px] text-[#00aa73] hover:text-[#008c5e] transition-colors">{sc ? 'Hide' : 'View'} Authorization Letter <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={sc ? 'M5 15l7-7 7 7' : 'M19 9l-7 7-7-7'} /></svg></button></div>{sc && <div className="w-full lg:w-auto lg:max-w-sm"><img src="/certificate.png" alt="Festo Authorization Letter" className="w-full max-h-[500px] object-contain border border-gray-200 bg-white" /></div>}</div></div></div></section>
-
-    {/* About Festo Stats */}
-    <section className="py-16"><div className={CNT}><div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"><div><p className={`${UL} text-[#00aa73] mb-3`}>About Festo</p><h2 className="text-2xl font-normal text-[#1c1c1c] mb-6">A Global Leader in Industrial Automation</h2><div className="space-y-4 text-[#666] leading-relaxed text-sm"><p>Founded in 1925, Festo is a leading worldwide supplier of industrial automation and technical education. With an annual turnover of 3.2 billion Euro and over 20,100 employees, Festo operates in 176 countries through 61 subsidiaries and more than 250 branch offices.</p><p>Comprehensive portfolio spans pneumatic and electric automation, process automation, and learning systems. With over 33,000 catalogue products and more than 15,000 customer solutions developed every year, Festo maintains an R&D quota of 8% of total revenue, filing 100 new patents annually.</p><p>Worldwide production network includes facilities in Germany, Switzerland, USA, Brazil, India, China, Bulgaria, Czech Republic, and Hungary. Serves over 300,000 industry customers and 56,000 didactic customers.</p></div></div><div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-3">{STATS.map(s => (<div key={s.l} className="text-center p-4 bg-[#f5f5f5]"><p className="text-xl font-light text-[#00aa73]">{s.v}</p><p className="text-[11px] text-[#999] mt-1 uppercase tracking-[0.05em]">{s.l}</p></div>))}</div></div></div></section>
-
-    {/* Certifications */}
-    <section className="py-16 bg-[#f5f5f5]"><div className={CNT}><p className={`${UL} text-[#00aa73] mb-3`}>Quality & Compliance</p><h2 className="text-2xl font-normal text-[#1c1c1c] mb-10">Product Certifications & Approvals</h2><div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">{CERTS.map(c => (<div key={c.n} className="bg-white p-5 border border-gray-200"><div className="flex items-center justify-between mb-2"><h3 className="text-[14px] font-semibold text-[#1c1c1c]">{c.n}</h3><span className="text-[10px] uppercase tracking-[0.1em] text-[#999] bg-[#f5f5f5] px-2 py-0.5">{c.t}</span></div><p className="text-[12px] text-[#666]">{c.d || c.s}</p></div>))}</div></div></section>
-
-    <section className="py-16 bg-[#1a1a1a] text-white"><div className={`${CNT} text-center`}><h2 className="text-2xl font-light mb-4">Looking for more information on our people, technology and solutions?</h2><p className="text-gray-400 max-w-2xl mx-auto text-sm mb-8">Contact our team to discuss your Festo automation requirements.</p><button onClick={() => window.location.href='#contact'} className="inline-flex items-center px-8 py-3 bg-[#00aa73] hover:bg-[#008c5e] text-white text-[13px] font-normal uppercase tracking-[0.05em] transition-colors">Contact Us</button></div></section>
-  </main>)
-}
-
-function Products({ nav }: { nav: (p: Page) => void }) {
-  const pressureProducts = [
-    { title: 'Pressure Gauges', desc: 'Gauge Pressure transmitters compare a pressure relative to atmospheric measure.', img: '/products/pressure-gauges.jpg', items: ['Industrial Pressure Gauge with Glycerin Filled','Vacuum Pressure Gauge','Diaphragm Pressure Gauge','Differential Pressure Gauge','Electric Contact Pressure Gauge','Digital Pressure Gauge','Manometer & Macleod Gauge','Digital Manometer'] },
-    { title: 'Pressure Transmitter', desc: 'A pressure transmitter is a device used to measure and transmit fluid or gas pressure in a pipeline, tank, or vessel to a control system or display device.', img: '/products/pressure-transmitter.jpg', items: ['Differential Pressure Transmitter - DPT','Mini Differential Pressure Transmitter','Pressure Indicator Transmitter PIT-S','Pressure Indicator Transmitter PIT-F','Mini Pressure Indicator Transmitter LCD','Mini Pressure Indicator Transmitter LED','Pressure Indicator Transmitter with Capillary'] },
-    { title: 'Pressure Sensors and Transducers', desc: 'Automation Technology proudly offers a complete selection of pressure sensors and pressure transducers.', img: '/products/pressure-sensors.jpg', items: ['PTE Series Pressure Sensors','Smart Metering Pressure Sensors','Differential Pressure Sensor','Differential Pressure Transducer','Pressure and Temperature Transmitter','Capacitive Pressure Transducers','Strain Gauge Pressure Transducers'] },
-    { title: 'Pressure Switch', desc: 'A pressure switch opens or closes a corresponding switch contact as soon as a preset pressure is reached.', img: '/products/pressure-switch.jpg', items: ['Electronic Pressure Switch','OEM Pressure Switch with Display','Diaphragm Pressure Switch','Compact Pressure Switch'] },
-  ]
-
-  const tempProducts = [
-    { title: 'Temperature Transmitters', desc: 'Temperature transmitters feature significant advances over direct wired counterparts. Eliminate special cabling requirements, simplify engineering and maintenance while enabling advanced diagnostics. Automation Technology offers head-mount, panel-mount, and field-mount devices to cover different temperature applications.', img: '/products/temp-transmitter.jpg', items: ['Field Mount','Head Mount','Panel Mount'] },
-    { title: 'Temperature Controllers', desc: 'Temperature controllers are used to maintain a constant temperature (the target) in furnaces and other equipment. Generally, they include a measured input indicator and a setpoint controller. They generate a control signal according to the difference between the indicated value (measured input) and target value, and adjust the temperature to match the target.', img: '/products/temp-controller.jpg', items: ['On-Off Controllers','Proportional (P) Controllers','PID Controllers'] },
-  ]
-
-  return (<main>
-    <section className="relative bg-[#1a1a1a] text-white overflow-hidden"><div className="absolute inset-0 opacity-30"><img src="/products/pressure-facility.jpg" alt="" className="w-full h-full object-cover" /></div><div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/90 to-transparent" /><div className={`relative ${CNT} py-20 sm:py-28`}><div className="max-w-3xl"><div className="text-[12px] font-normal uppercase tracking-[0.15em] text-[#00aa73] mb-3">Field Instruments</div><h1 className="text-3xl sm:text-4xl font-light mb-4">Products & Solutions</h1><p className="text-gray-400 max-w-2xl text-sm">Accurate and reliable measurement instruments that play a critical role in your facility's operations. With 20 million+ devices installed worldwide, we have got you covered.</p><div className="mt-6"><button onClick={() => nav('contact')} className="inline-flex items-center px-6 py-3 bg-[#00aa73] hover:bg-[#008c5e] text-white text-[13px] font-normal uppercase tracking-[0.05em] transition-colors">Request a Quote</button></div></div></div></section>
-
-    {/* Pressure Measurement */}
-    <section className="py-16"><div className={CNT}><p className={`${UL} text-[#00aa73] mb-3`}>Field Instruments</p><h2 className="text-2xl font-normal text-[#1c1c1c] mb-4">Pressure Measurement</h2><p className="text-[#666] text-sm leading-relaxed mb-4 max-w-4xl">Pressure measurement instruments have helped customers reduce downtime, operate more efficiently and enhance plant safety. Every product is designed with you in mind, as we put more insights and control in your hands, because no one knows your operations better than you.</p><img src="/products/pressure-hero.jpg" alt="Pressure Measurement" className="w-full max-w-xl rounded mb-10" />
-
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-      {pressureProducts.map(cat => (
-        <div key={cat.title} className="bg-white border border-gray-200 overflow-hidden group hover:border-[#00aa73] transition-colors">
-          <div className="aspect-[16/10] overflow-hidden"><img src={cat.img} alt={cat.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" /></div>
-          <div className="p-6"><h3 className="text-[13px] font-semibold text-[#1c1c1c] mb-2 group-hover:text-[#00aa73] transition-colors uppercase tracking-[0.05em]">{cat.title}</h3>
-          <p className="text-sm text-[#666] leading-relaxed mb-4">{cat.desc}</p>
-          <ul className="space-y-2">{cat.items.map(i => (<li key={i} className="flex items-center gap-2 text-sm text-[#666]">{CHK}{i}</li>))}</ul>
-        </div>
-      </div>
-      ))}
-    </div></div></section>
-
-    {/* Temperature Measurement */}
-    <section className="py-16 bg-[#f5f5f5]"><div className={CNT}><p className={`${UL} text-[#00aa73] mb-3`}>Field Instruments</p><h2 className="text-2xl font-normal text-[#1c1c1c] mb-4">Temperature Measurement</h2><p className="text-[#666] text-sm leading-relaxed mb-4 max-w-4xl">Temperature Measurement Solutions deliver accurate and reliable temperature data to help keep your operations running smoothly. Our solutions are utilized in a wide variety of industrial applications around the world in various industries including oil and gas, chemical, food and beverage, and many more.</p><img src="/products/temp-hero.jpg" alt="Temperature Measurement" className="w-full max-w-xl rounded mb-10" />
-
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-      {tempProducts.map(cat => (
-        <div key={cat.title} className="bg-white border border-gray-200 overflow-hidden group hover:border-[#00aa73] transition-colors">
-          <div className="aspect-[16/10] overflow-hidden"><img src={cat.img} alt={cat.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" /></div>
-          <div className="p-6"><h3 className="text-[13px] font-semibold text-[#1c1c1c] mb-2 group-hover:text-[#00aa73] transition-colors uppercase tracking-[0.05em]">{cat.title}</h3>
-          <p className="text-sm text-[#666] leading-relaxed mb-4">{cat.desc}</p>
-          <ul className="space-y-2">{cat.items.map(i => (<li key={i} className="flex items-center gap-2 text-sm text-[#666]">{CHK}{i}</li>))}</ul>
-        </div>
-      </div>
-      ))}
-    </div></div></section>
-
-    {/* Wide image */}
-    <section className="py-16"><div className={CNT}><img src="/products/pressure-wide.webp" alt="Industrial Automation" className="w-full rounded" /></div></section>
-
-    <section className="py-16 bg-[#1a1a1a] text-white"><div className={`${CNT} text-center`}><h2 className="text-2xl font-light mb-4">Looking for more information on our people, technology and solutions?</h2><p className="text-gray-400 max-w-2xl mx-auto text-sm mb-8">Contact our engineering team to discuss your measurement and automation requirements.</p><button onClick={() => nav('contact')} className="inline-flex items-center px-8 py-3 bg-[#00aa73] hover:bg-[#008c5e] text-white text-[13px] font-normal uppercase tracking-[0.05em] transition-colors">Contact Us</button></div></section>
-  </main>)
-}
-
-function Industries() {
-  const PI = ['Oil & Gas','Chemicals','Food & Beverage','Water & Wastewater','Pharma & Cosmetics','Power & Energy','Pulp & Paper','Mineral Processing']
-  const FA = ['Automotive','Electronics & Assembly','Food & Packaging','Laboratory Automation','Biotech-Pharma','Medical Technology','Intralogistics','Technical Education']
-  return (<main>
-    <section className="bg-[#1a1a1a] text-white py-16"><div className={CNT}><p className={`${UL} text-[#00aa73] mb-3`}>Industries We Serve</p><h1 className="text-3xl sm:text-4xl font-light mb-4">Solutions Across Industries</h1><p className="text-gray-400 max-w-2xl text-sm">Automation Technology delivers industrial solutions purpose-built for the energy, infrastructure, and manufacture sectors, and engineered to drive a sustainable future.</p></div></section>
-    <section className="py-16"><div className={CNT}><div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">{IND.map(ind => (<div key={ind.n} className="group relative overflow-hidden"><div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-[#1a1a1a] to-[#333]"><div className="w-full h-full flex items-center justify-center p-6"><span className="text-3xl font-light text-white/20">{ind.n}</span></div></div><div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" /><div className="absolute bottom-0 left-0 right-0 p-5"><h3 className="text-lg font-semibold text-white mb-1">{ind.n}</h3><p className="text-sm text-gray-300 leading-relaxed">{ind.d}</p></div></div>))}</div></div></section>
-    <section className="py-16 bg-[#f5f5f5]"><div className={CNT}>{[{t:'Process Industries',items:PI},{t:'Factory Automation',items:FA}].map(g => (<div key={g.t}><h2 className="text-[13px] font-semibold uppercase tracking-[0.1em] text-[#1c1c1c] mb-6 pb-3 border-b-2 border-[#00aa73]">{g.t}</h2><div className="grid grid-cols-1 sm:grid-cols-2 gap-3">{g.items.map((i: string) => (<div key={i} className="flex items-center gap-3 p-3 bg-white">{CHK}<span className="text-[13px] text-[#1c1c1c]">{i}</span></div>))}</div></div>))}</div></section>
-  </main>)
-}
-
-function About() {
-  return (<main>
-    <section className="bg-[#1a1a1a] text-white py-16"><div className={CNT}><div className="text-[12px] font-normal uppercase tracking-[0.15em] text-[#00aa73] mb-3">About Us</div><h1 className="text-3xl sm:text-4xl font-light mb-4">Harness Your Industrial Intelligence</h1></div></section>
-    <section className="py-16"><div className={CNT}><div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"><div><h2 className="text-2xl font-normal text-[#1c1c1c] mb-6">Who We Are</h2><div className="space-y-4 text-[#666] leading-relaxed text-sm"><p>We are Pakistan's leading supplier of Industrial Automation, Pneumatic, Hydraulic, Filtration and Motion Control Equipment & Instrumentation with Our Brands. We would like to offer our services in your organization as registered supplier.</p></div></div><div><img src="/about-portfolio.webp" alt="Company Portfolio" className="w-full rounded" /></div></div></div></section>
-    <section className="py-16 bg-[#f5f5f5]"><div className={CNT}><h2 className="text-2xl font-normal text-[#1c1c1c] mb-6">Company Portfolio</h2><p className="text-[#666] text-sm leading-relaxed max-w-4xl mb-10">Automation Technology is a total solution provider in the fields of industrial automation. Automation Technology believes teamwork, encourage collaborative culture and closely working together. Automation Technology provides career growth and continuous learning opportunities to work across functions and places. Automation Technology maintains long term healthy relationship with its customers, technology partners and suppliers. The strong in-house technical expertise to provide total customer/product support has helped Automation Technology win the confidence and establish excellent rapport with end users of various industries & markets and among Project Consultants, System Integrators, Companies executing turnkey packages. The emphasis on complete customer support has resulted in a large number of loyal customers across a wide variety of industries.</p>
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">{[{v:'2010',l:'Founding Year'},{v:'2,000+',l:'Happy Customers'},{v:'190',l:'Companies Work With Us'},{v:'2',l:'Offices'},{v:'21',l:'Team Members'},{v:'750',l:'Projects Completed'}].map(s => (<div key={s.l} className="text-center p-4 bg-white"><p className="text-2xl font-light text-[#00aa73]">{s.v}</p><p className="text-[10px] text-[#999] mt-1 uppercase tracking-[0.05em]">{s.l}</p></div>))}</div></div></section>
-    <section className="py-16"><div className={CNT}><h2 className="text-2xl font-normal text-[#1c1c1c] mb-4">Leadership</h2><p className="text-[#666] text-sm mb-10">Meet the people shaping the future of industrial solutions</p><div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">{[{n:'Ghulam Sarwar Khan',r:'CEO / Founder'},{n:'Emaad Yaseen Saeed',r:'Director'},{n:'Braydon Wilkerson',r:'Technical Engineer'},{n:'Kristin Watson',r:'Support'}].map(l => (<div key={l.n} className="text-center"><div className="w-32 h-32 mx-auto mb-3 rounded-full bg-gradient-to-br from-[#1a1a1a] to-[#444] flex items-center justify-center"><span className="text-white text-2xl font-light">{l.n.split(' ').map(w => w[0]).join('')}</span></div><h3 className="text-[14px] font-semibold text-[#1c1c1c]">{l.n}</h3><p className="text-[12px] text-[#999] uppercase tracking-[0.05em]">{l.r}</p></div>))}</div></div></section>
-    <section className="py-16 bg-[#f5f5f5]"><div className={CNT}><p className={`${H2UL} text-[#666] mb-3`}>Why Choose Us</p><h3 className="text-2xl font-normal text-[#1c1c1c] mb-10">Why Choose Automation Technology</h3><div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">{[{t:'Authorized Distributor',d:'Officially authorized by Festo for complete product range in Pakistan with direct HQ access.'},{t:'Engineering Expertise',d:'Engineers trained by Festo for system design, integration, and troubleshooting.'},{t:'Comprehensive Solutions',d:'From components to complete engineered systems, turnkey solutions tailored to requirements.'},{t:'Local Presence',d:'Based in Lahore with on-site support, training, and commissioning across Pakistan.'},{t:'Global Backing',d:'Festo network of 250+ offices in 61 countries, ensuring reliable supply chain.'},{t:'Quality Assurance',d:'Full Festo warranties: ISO 9001, ISO 14001, CE, UL, CSA, and industry approvals.'}].map(i => (<div key={i.t} className="bg-white p-6 border border-gray-200"><div className="flex items-center gap-2 mb-3">{CHK}<h3 className="text-[13px] font-semibold text-[#1c1c1c] uppercase tracking-[0.05em]">{i.t}</h3></div><p className="text-sm text-[#666] leading-relaxed">{i.d}</p></div>))}</div></div></section>
-  </main>)
-}
-
-function Contact() {
-  const [f, setF] = useState({ name: '', email: '', phone: '', company: '', message: '' })
-  const [done, setDone] = useState(false)
-  return (<main>
-    <section className="bg-[#1a1a1a] text-white py-16"><div className={CNT}><p className={`${UL} text-[#00aa73] mb-3`}>Contact Us</p><h1 className="text-3xl sm:text-4xl font-light mb-4">Get in Touch</h1><p className="text-gray-400 max-w-2xl text-sm">Ready to discuss your automation requirements? Our engineering team is here to help.</p></div></section>
-    <section className="py-16"><div className={CNT}><div className="grid grid-cols-1 lg:grid-cols-2 gap-12"><div><h2 className="text-xl font-normal text-[#1c1c1c] mb-8">Automation Technology</h2><div className="space-y-6">{[{i:'M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z',t:'Office Address',x:'S-42, 2nd Floor, Gulberg Center, Main Boulevard, Gulberg-III Lahore-54660-Pakistan'},{i:'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z',t:'Phone',x:'+92-42-35750039'},{i:'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',t:'Email',x:'Info@automationtechnology.com.pk'},{i:'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',t:'Business Hours',x:'Monday - Saturday: 9:00 AM - 6:00 PM'}].map(c => (<div key={c.t} className="flex items-start gap-4"><div className="w-10 h-10 bg-[#f5f5f5] flex items-center justify-center shrink-0"><svg className="w-5 h-5 text-[#00aa73]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={c.i} /></svg></div><div><h3 className="text-[13px] font-semibold text-[#1c1c1c] mb-1 uppercase tracking-[0.05em]">{c.t}</h3><p className="text-sm text-[#666]">{c.x}</p></div></div>))}</div></div><div>{done ? (<div className="bg-[#f0faf6] border border-[#00aa73]/20 p-8 text-center"><div className="w-16 h-16 bg-[#00aa73] rounded-full flex items-center justify-center mx-auto mb-4"><svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg></div><h3 className="text-lg font-normal text-[#1c1c1c] mb-2">Thank You</h3><p className="text-sm text-[#666]">Your message has been received. Our team will contact you shortly.</p></div>) : (<form onSubmit={e => { e.preventDefault(); setDone(true) }} className="space-y-5"><div className="grid grid-cols-1 sm:grid-cols-2 gap-5"><div><label className="block text-[12px] uppercase tracking-[0.05em] text-[#1c1c1c] mb-1.5">Full Name *</label><input type="text" required value={f.name} onChange={e => setF({...f, name: e.target.value})} className="w-full px-3 py-2.5 border border-gray-200 text-sm text-[#1c1c1c] focus:outline-none focus:border-[#00aa73]" /></div><div><label className="block text-[12px] uppercase tracking-[0.05em] text-[#1c1c1c] mb-1.5">Email *</label><input type="email" required value={f.email} onChange={e => setF({...f, email: e.target.value})} className="w-full px-3 py-2.5 border border-gray-200 text-sm text-[#1c1c1c] focus:outline-none focus:border-[#00aa73]" /></div></div><div className="grid grid-cols-1 sm:grid-cols-2 gap-5"><div><label className="block text-[12px] uppercase tracking-[0.05em] text-[#1c1c1c] mb-1.5">Phone</label><input type="tel" value={f.phone} onChange={e => setF({...f, phone: e.target.value})} className="w-full px-3 py-2.5 border border-gray-200 text-sm text-[#1c1c1c] focus:outline-none focus:border-[#00aa73]" /></div><div><label className="block text-[12px] uppercase tracking-[0.05em] text-[#1c1c1c] mb-1.5">Company</label><input type="text" value={f.company} onChange={e => setF({...f, company: e.target.value})} className="w-full px-3 py-2.5 border border-gray-200 text-sm text-[#1c1c1c] focus:outline-none focus:border-[#00aa73]" /></div></div><div><label className="block text-[12px] uppercase tracking-[0.05em] text-[#1c1c1c] mb-1.5">Message *</label><textarea required rows={5} value={f.message} onChange={e => setF({...f, message: e.target.value})} className="w-full px-3 py-2.5 border border-gray-200 text-sm text-[#1c1c1c] focus:outline-none focus:border-[#00aa73] resize-none" /></div><button type="submit" className="w-full sm:w-auto px-8 py-3 bg-[#00aa73] hover:bg-[#008c5e] text-white text-[13px] uppercase tracking-[0.05em] transition-colors">Send Message</button></form>)}</div></div></div></section>
-  </main>)
-}
-
-export default function HomePage() {
-  const [cp, setCp] = useState<Page>('home')
-  const nav = useCallback((p: Page) => { setCp(p); window.scrollTo({ top: 0, behavior: 'smooth' }) }, [])
-  return (<div className="min-h-screen flex flex-col bg-white text-[#1c1c1c]"><Header cp={cp} nav={nav} /><div className="flex-1" id="contact">{cp === 'home' && <Home nav={nav} />}{cp === 'festo' && <Festo />}{cp === 'products' && <Products nav={nav} />}{cp === 'industries' && <Industries />}{cp === 'about' && <About />}{cp === 'contact' && <Contact />}</div><Footer nav={nav} /></div>)
 }
