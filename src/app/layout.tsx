@@ -9,11 +9,11 @@ const notoSans = Noto_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "MS Automation Technology | Industrial Automation & Festo Distribution",
+  title: "Automation Technology | Open New Automation Mind",
   description:
-    "MS Automation Technology is an authorized Festo distributor in Pakistan, providing industrial automation solutions including pneumatic, electric, and process automation products.",
+    "Automation Technology - Pakistan's leading supplier of Industrial Automation, Pneumatic, Hydraulic, Filtration and Motion Control Equipment & Instrumentation. Authorized Festo distributor.",
   keywords: [
-    "MS Automation Technology",
+    "Automation Technology",
     "Festo distributor Pakistan",
     "industrial automation",
     "process automation",
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     "Festo products",
     "automation Lahore",
   ],
-  authors: [{ name: "MS Automation Technology" }],
+  authors: [{ name: "Automation Technology" }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: "/ati-logo.png",
   },
   openGraph: {
-    title: "MS Automation Technology",
+    title: "Automation Technology",
     description:
-      "Authorized Festo distributor in Pakistan. Industrial automation solutions for process and factory automation.",
+      "Pakistan's leading supplier of Industrial Automation, Pneumatic, Hydraulic, Filtration and Motion Control Equipment & Instrumentation.",
     type: "website",
   },
 };
