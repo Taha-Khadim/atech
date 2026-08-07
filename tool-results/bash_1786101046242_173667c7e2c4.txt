@@ -1,0 +1,1170 @@
+
+		<img width="598" height="148" src="https://automationtechnology.com.pk/wp-content/uploads/2026/04/ati-logo.png" class="attachment-full size-full" alt="" style="max-width:175px;" decoding="async" srcset="https://automationtechnology.com.pk/wp-content/uploads/2026/04/ati-logo.png 598w, https://automationtechnology.com.pk/wp-content/uploads/2026/04/ati-logo-400x99.png 400w, https://automationtechnology.com.pk/wp-content/uploads/2026/04/ati-logo-430x106.png 430w, https://automationtechnology.com.pk/wp-content/uploads/2026/04/ati-logo-150x37.png 150w, https://automationtechnology.com.pk/wp-content/uploads/2026/04/ati-logo-220x55.png 220w" sizes="(max-width: 598px) 100vw, 598px">	
+---SEPARATOR---
+
+	<ul id="menu-main-navigation" class="menu wd-nav wd-nav-header wd-nav-main wd-style-default wd-gap-s"><li id="menu-item-29829" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-29829 item-level-0 menu-simple-dropdown wd-event-hover"><a href="https://automationtechnology.com.pk/" class="woodmart-nav-link"><span class="nav-link-text">Home</span></a></li>
+<li id="menu-item-30958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30958 item-level-0 menu-mega-dropdown wd-event-hover dropdown-with-height" style="--wd-dropdown-height: 350px;--wd-dropdown-padding: -1px;"><a href="#" class="woodmart-nav-link"><span class="nav-link-text">Products</span></a><div class="color-scheme-dark wd-design-aside wd-dropdown-menu wd-dropdown wd-style-default"><div class="container wd-entry-content"><div class="wd-sub-menu-wrapp">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li id="menu-item-29113" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29113 item-level-1 wd-event-hover menu-item-has-children"><a href="#" class="woodmart-nav-link">Measurement Instrumentation</a>
+	<div class="wd-dropdown-menu wd-dropdown wd-design-default color-scheme-dark">
+
+	<div class="container wd-entry-content">
+			<link rel="stylesheet" id="elementor-post-29328-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-29328.css?ver=1786072195" type="text/css" media="all">
+					<div data-elementor-type="wp-post" data-elementor-id="29328" class="elementor elementor-29328">
+				<div class="wd-negative-gap elementor-element elementor-element-1393f0c e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="1393f0c" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-8ad99cd e-con-full e-flex e-con e-child" data-id="8ad99cd" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-80d5123 elementor-widget elementor-widget-wd_extra_menu_list" data-id="80d5123" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+											<a>
+																						
+															INSTRUMENTS							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="https://automationtechnology.com.pk/pressure-measurement/">
+																												
+																			Pressure Measurement									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="https://automationtechnology.com.pk/temperature-measurement/">
+																												
+																			Temperature Measurement									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Level Measurement									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Flow Measurement									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Gas Analysis									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3fe11e4 e-con-full e-flex e-con e-child" data-id="3fe11e4" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-5b57233 elementor-widget elementor-widget-wd_extra_menu_list" data-id="5b57233" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Gas Analysis									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Liquid Analysis									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Flame &amp; Gas Detection									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Density &amp; Viscosity									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Industrial Wireless Technology									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ccd91c1 e-con-full e-flex e-con e-child" data-id="ccd91c1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-9d53cd8 elementor-widget elementor-widget-wd_extra_menu_list" data-id="9d53cd8" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+											<a>
+																						
+															Brands							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Schubert &amp; Salzer (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Clark Reliance (USA)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Schmersal (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-black">
+								<a href="https://automationtechnology.com.pk/festo-germany/">
+																												
+																			Festo (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Herolift  (China)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			SunCom (China)									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+	</div>
+
+	</div>
+</li>
+	<li id="menu-item-28984" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28984 item-level-1 wd-event-hover menu-item-has-children dropdown-with-height" style="--wd-dropdown-height: 495px;--wd-dropdown-width: 1100px;--wd-dropdown-padding: 0px;"><a href="#" class="woodmart-nav-link">Automation System</a>
+	<div class="wd-dropdown-menu wd-dropdown wd-design-sized color-scheme-dark">
+
+	<div class="container wd-entry-content">
+			<link rel="stylesheet" id="elementor-post-29334-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-29334.css?ver=1786072197" type="text/css" media="all">
+					<div data-elementor-type="wp-post" data-elementor-id="29334" class="elementor elementor-29334">
+				<div class="wd-negative-gap elementor-element elementor-element-1393f0c e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="1393f0c" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-8ad99cd e-con-full e-flex e-con e-child" data-id="8ad99cd" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-80d5123 elementor-widget elementor-widget-wd_extra_menu_list" data-id="80d5123" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+											<a>
+																						
+															PRODUCTS &amp; SOFTWARE							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Distributed Control Systems									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			 SCADA Systems									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Manufacturing Execution Systems									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Asset Performance Management									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Safety Instrumented Systems									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ccd91c1 e-con-full e-flex e-con e-child" data-id="ccd91c1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-9d53cd8 elementor-widget elementor-widget-wd_extra_menu_list" data-id="9d53cd8" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+											<a>
+																						
+															Brands							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Schubert &amp; Salzer (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Clark Reliance (USA)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Schmersal (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-black">
+								<a href="https://automationtechnology.com.pk/festo-germany/">
+																												
+																			Festo (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Herolift  (China)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			SunCom (China)									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+	</div>
+
+	</div>
+</li>
+	<li id="menu-item-28985" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28985 item-level-1 wd-event-hover menu-item-has-children dropdown-with-height" style="--wd-dropdown-height: 495px;--wd-dropdown-width: 1100px;--wd-dropdown-padding: 0px;"><a href="#" class="woodmart-nav-link">Test &amp; Measurement</a>
+	<div class="wd-dropdown-menu wd-dropdown wd-design-sized color-scheme-dark">
+
+	<div class="container wd-entry-content">
+			<link rel="stylesheet" id="elementor-post-29337-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-29337.css?ver=1786072199" type="text/css" media="all">
+					<div data-elementor-type="wp-post" data-elementor-id="29337" class="elementor elementor-29337">
+				<div class="wd-negative-gap elementor-element elementor-element-1393f0c e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="1393f0c" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-8ad99cd e-con-full e-flex e-con e-child" data-id="8ad99cd" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-80d5123 elementor-widget elementor-widget-wd_extra_menu_list" data-id="80d5123" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+											<a>
+																						
+															PRODUCTS 							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Switches									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			NI Data Acquisition									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			NI Software									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Source Measure Units									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			NI Vector Signal Transceivers									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			NI Vector Signal Analyzers									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ccd91c1 e-con-full e-flex e-con e-child" data-id="ccd91c1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-9d53cd8 elementor-widget elementor-widget-wd_extra_menu_list" data-id="9d53cd8" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+											<a>
+																						
+															Brands							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Schubert &amp; Salzer (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Clark Reliance (USA)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Schmersal (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-black">
+								<a href="https://automationtechnology.com.pk/festo-germany/">
+																												
+																			Festo (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Herolift  (China)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			SunCom (China)									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+	</div>
+
+	</div>
+</li>
+	<li id="menu-item-28986" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28986 item-level-1 wd-event-hover menu-item-has-children dropdown-with-height" style="--wd-dropdown-height: 495px;--wd-dropdown-width: 1099px;--wd-dropdown-padding: 0px;"><a href="#" class="woodmart-nav-link">Discrete Automation</a>
+	<div class="wd-dropdown-menu wd-dropdown wd-design-sized color-scheme-dark">
+
+	<div class="container wd-entry-content">
+			<link rel="stylesheet" id="elementor-post-29351-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-29351.css?ver=1786072199" type="text/css" media="all">
+					<div data-elementor-type="wp-post" data-elementor-id="29351" class="elementor elementor-29351">
+				<div class="wd-negative-gap elementor-element elementor-element-1393f0c e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="1393f0c" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-8ad99cd e-con-full e-flex e-con e-child" data-id="8ad99cd" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-80d5123 elementor-widget elementor-widget-wd_extra_menu_list" data-id="80d5123" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+											<a>
+																						
+															Products &amp; Software							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Industrial Sensors &amp; Switches									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Pneumatics									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Pressure Regulators									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Valves									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			 Marine Controls									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3fe11e4 e-con-full e-flex e-con e-child" data-id="3fe11e4" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-5b57233 elementor-widget elementor-widget-wd_extra_menu_list" data-id="5b57233" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Electrical &amp; Lighting									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Electrical Actuators &amp; Drives									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Feeding									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Handling									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			 Electrical &amp; Lighting									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ccd91c1 e-con-full e-flex e-con e-child" data-id="ccd91c1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-9d53cd8 elementor-widget elementor-widget-wd_extra_menu_list" data-id="9d53cd8" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+											<a>
+																						
+															Brands							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Schubert &amp; Salzer (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Clark Reliance (USA)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Schmersal (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-black">
+								<a href="https://automationtechnology.com.pk/festo-germany/">
+																												
+																			Festo (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Herolift  (China)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			SunCom (China)									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+	</div>
+
+	</div>
+</li>
+	<li id="menu-item-28983" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28983 item-level-1 wd-event-hover menu-item-has-children dropdown-with-height" style="--wd-dropdown-height: 495px;--wd-dropdown-width: 1100px;--wd-dropdown-padding: 0px;"><a href="#" class="woodmart-nav-link">Actuators</a>
+	<div class="wd-dropdown-menu wd-dropdown wd-design-sized color-scheme-dark">
+
+	<div class="container wd-entry-content">
+			<link rel="stylesheet" id="elementor-post-15484-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-15484.css?ver=1786072200" type="text/css" media="all">
+					<div data-elementor-type="wp-post" data-elementor-id="15484" class="elementor elementor-15484">
+				<div class="wd-negative-gap elementor-element elementor-element-1393f0c e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="1393f0c" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-8ad99cd e-con-full e-flex e-con e-child" data-id="8ad99cd" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-80d5123 elementor-widget elementor-widget-wd_extra_menu_list" data-id="80d5123" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Controllers									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Instruments &amp; Software									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Hydraulic Actuators									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Electric Actuators									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Pneumatic Actuators									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			GearboxesPneumatic Cylinders									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Gear Operators									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ccd91c1 e-con-full e-flex e-con e-child" data-id="ccd91c1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-9d53cd8 elementor-widget elementor-widget-wd_extra_menu_list" data-id="9d53cd8" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+											<a>
+																						
+															Brands							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Schubert &amp; Salzer (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Clark Reliance (USA)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Schmersal (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-black">
+								<a href="https://automationtechnology.com.pk/festo-germany/">
+																												
+																			Festo (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Herolift  (China)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			SunCom (China)									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+	</div>
+
+	</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li id="menu-item-28971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28971 item-level-0 menu-mega-dropdown wd-event-hover menu-item-has-children dropdown-with-height" style="--wd-dropdown-height: 340px;--wd-dropdown-width: 1200px;--wd-dropdown-padding: 0px;"><a href="https://automationtechnology.com.pk/blog/" class="woodmart-nav-link"><span class="nav-link-text">Industries</span></a>
+<div class="wd-dropdown-menu wd-dropdown wd-design-sized color-scheme-dark">
+
+<div class="container wd-entry-content">
+			<link rel="stylesheet" id="elementor-post-29135-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-29135.css?ver=1786072201" type="text/css" media="all">
+					<div data-elementor-type="wp-post" data-elementor-id="29135" class="elementor elementor-29135">
+				<div class="wd-negative-gap elementor-element elementor-element-cf0971a e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="cf0971a" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-01734d1 e-con-full e-flex e-con e-child" data-id="01734d1" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-898a229 elementor-widget elementor-widget-wd_extra_menu_list" data-id="898a229" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-red">
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Oil &amp; Gas									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Chemical									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Food &amp; Beverage									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Pulp &amp; Paper									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Power									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Water &amp; Wastewater									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Mining									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a>
+																												
+																			Packaging									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-55fca8a e-con-full e-flex e-con e-child" data-id="55fca8a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-074166c elementor-widget elementor-widget-wd_extra_menu_list" data-id="074166c" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-red">
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Factory Automation									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Automotive &amp; Transportation									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Renewable Energy									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Data Centers									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Cement									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Pharmaceutical									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Iron &amp; Steel									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a>
+																												
+																			Battery Manufacturing									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-e783688 e-con-full e-flex e-con e-child" data-id="e783688" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-3ee3f1a elementor-widget elementor-widget-wd_extra_menu_list" data-id="3ee3f1a" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-primary">
+											<a>
+																						
+															Brands							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Schubert &amp; Salzer (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Clark Reliance (USA)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Schmersal (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-black">
+								<a href="https://automationtechnology.com.pk/festo-germany/">
+																												
+																			Festo (Germany)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Herolift  (China)									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			SunCom (China)									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+</div>
+
+</div>
+</li>
+<li id="menu-item-28969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28969 item-level-0 menu-simple-dropdown wd-event-hover"><a href="https://automationtechnology.com.pk/portfolio/" class="woodmart-nav-link"><span class="nav-link-text">Support</span></a></li>
+<li id="menu-item-28982" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28982 item-level-0 menu-mega-dropdown wd-event-hover menu-item-has-children dropdown-with-height" style="--wd-dropdown-height: 40px;--wd-dropdown-width: 1250px;"><a href="https://automationtechnology.com.pk/contact-us/" class="woodmart-nav-link"><span class="nav-link-text">Company</span></a>
+<div class="wd-dropdown-menu wd-dropdown wd-design-sized color-scheme-dark">
+
+<div class="container wd-entry-content">
+			<link rel="stylesheet" id="elementor-post-29362-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-29362.css?ver=1786072203" type="text/css" media="all">
+					<div data-elementor-type="wp-post" data-elementor-id="29362" class="elementor elementor-29362">
+				<div class="wd-negative-gap elementor-element elementor-element-c9da916 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="c9da916" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-9dfa766 e-con-full e-flex e-con e-child" data-id="9dfa766" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-29ab65d elementor-widget elementor-widget-wd_extra_menu_list" data-id="29ab65d" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-red">
+											<a href="#">
+																						
+															About Us							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="https://automationtechnology.com.pk/about-us1">
+																												
+																			About Automation Technology									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Leadership									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Global Offices									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Investor Relations									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b0c5a19 e-con-full e-flex e-con e-child" data-id="b0c5a19" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-23a6d6c elementor-widget elementor-widget-wd_extra_menu_list" data-id="23a6d6c" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-red">
+											<a href="#">
+																						
+															Careers							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Life at Automation Technology									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Early careers									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Benefits									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			How we hire									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			   Current opportunities									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-23c3eec e-con-full e-flex e-con e-child" data-id="23c3eec" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-c30329f elementor-widget__width-initial elementor-widget elementor-widget-wd_extra_menu_list" data-id="c30329f" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+				<div class="elementor-widget-container">
+								<ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+				<li class="item-with-label item-label-red">
+											<a href="#">
+																						
+															Learning and Support							
+													</a>
+					
+					<ul class="sub-sub-menu">
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Technical Support									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Support and Success									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Trainings									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Web Seminars									
+																	</a>
+							</li>
+													
+							<li class="item-with-label item-label-primary">
+								<a href="#">
+																												
+																			Documentations &amp; Downloads									
+																	</a>
+							</li>
+											</ul>
+				</li>
+			</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-51ba953 e-con-full e-flex e-con e-child" data-id="51ba953" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-c813726 wd-width-100 elementor-widget elementor-widget-wd_title" data-id="c813726" data-element_type="widget" data-e-type="widget" data-widget_type="wd_title.default">
+				<div class="elementor-widget-container">
+							<div class="title-wrapper wd-set-mb reset-last-child wd-title-color-default wd-title-style-default wd-title-size-large text-left">
+
+			
+			<div class="liner-continer">
+				<h4 class="woodmart-title-container title wd-fontsize-xxl">Need help?<br>
+Feel free contact us</h4> 
+							</div>
+
+							<div class="title-after_title reset-last-child wd-fontsize-s">
+					<p>Our mission is to empowers businesses off all size in an businesses.</p>				</div>
+					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6ec9ff9 elementor-widget elementor-widget-wd_button" data-id="6ec9ff9" data-element_type="widget" data-e-type="widget" data-widget_type="wd_button.default">
+				<div class="elementor-widget-container">
+							<div class="wd-button-wrapper text-left">
+			<a class="btn btn-style-default btn-shape-semi-round btn-size-default btn-color-primary btn-icon-pos-right" href="#">
+				<span class="wd-btn-text" data-elementor-setting-key="text">
+					Read more				</span>
+
+							</a>
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+</div>
+
+</div>
+</li>
+</ul>
+---SEPARATOR---
+Contact US

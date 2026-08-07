@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { CheckCircle } from 'lucide-react';
@@ -42,8 +43,16 @@ export default async function IndustryDetailPage({ params }: Props) {
       </div>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#0a1628] via-[#0f2847] to-[#003da5] text-white relative">
-        <div className="absolute inset-0 opacity-20 bg-[url('/images/hero/hero-1.jpg')] bg-cover bg-center" />
+      <section className="bg-gradient-to-br from-[#0a1628] via-[#0f2847] to-[#003da5] text-white relative min-h-[260px]">
+        <div className="absolute inset-0">
+          <Image
+            src={industry.image}
+            alt={industry.title}
+            fill
+            className="object-cover opacity-30"
+            sizes="100vw"
+          />
+        </div>
         <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16 flex items-center min-h-[260px]">
           <div className="max-w-2xl">
             <p className="text-[11px] uppercase tracking-[0.2em] text-blue-300 font-medium mb-2">Industry Solutions</p>

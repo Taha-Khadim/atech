@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import {
   Cog, Disc, Wind, Plug, Radio, Zap, Hand, ArrowRight, FileText, ExternalLink, ShieldCheck,
@@ -14,6 +15,7 @@ interface FestoCategory {
   id: string;
   title: string;
   icon: React.ComponentType<{ className?: string }>;
+  image?: string;
   items: { name: string; link: string }[];
 }
 
@@ -22,6 +24,7 @@ const festoCategories: FestoCategory[] = [
     id: 'actuators',
     title: 'Actuators & Drives',
     icon: Cog,
+    image: '/images/festo/pneumatic.jpg',
     items: [
       { name: 'Pneumatic Cylinders – Piston Rod', link: 'https://www.festo.com/us/en/p/pneumatic-cylinders_p_102497/' },
       { name: 'Round Cylinders', link: 'https://www.festo.com/us/en/p/pneumatic-cylinders-round_p_102530/' },
@@ -38,6 +41,7 @@ const festoCategories: FestoCategory[] = [
     id: 'valves',
     title: 'Valves & Valve Manifolds',
     icon: Disc,
+    image: '/images/festo/valves.jpg',
     items: [
       { name: 'Solenoid Valves', link: 'https://www.festo.com/us/en/p/solenoid-valves_p_102660/' },
       { name: 'Valve Terminals (VTUX)', link: 'https://www.festo.com/us/en/p/valve-terminals_p_102670/' },
@@ -81,6 +85,7 @@ const festoCategories: FestoCategory[] = [
     id: 'electric-drives',
     title: 'Electric Drives & Controls',
     icon: Zap,
+    image: '/images/festo/electric.jpg',
     items: [
       { name: 'Servo Motors', link: 'https://www.festo.com/us/en/p/servo-motors_p_102950/' },
       { name: 'Stepper Motors', link: 'https://www.festo.com/us/en/p/stepper-motors_p_102960/' },
@@ -92,6 +97,7 @@ const festoCategories: FestoCategory[] = [
     id: 'handling',
     title: 'Handling & Assembly',
     icon: Hand,
+    image: '/images/festo/handling.webp',
     items: [
       { name: 'Handling Systems', link: 'https://www.festo.com/us/en/p/handling-systems_p_103000/' },
       { name: 'Linear Guides', link: 'https://www.festo.com/us/en/p/linear-guides_p_103010/' },
@@ -106,7 +112,9 @@ export default function FestoPage() {
     <>
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#0a1628] via-[#0f2847] to-[#e20015] text-white relative">
-        <div className="absolute inset-0 opacity-15 bg-[url('/festo/festo-hero.webp')] bg-cover bg-center" />
+        <div className="absolute inset-0 opacity-20">
+          <Image src="/images/festo/hero.webp" alt="Festo" fill className="object-cover" />
+        </div>
         <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 flex items-center min-h-[320px]">
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-3">
@@ -148,25 +156,38 @@ export default function FestoPage() {
             {festoCategories.map((cat) => {
               const Icon = cat.icon;
               return (
-                <div key={cat.id} id={cat.id} className="border border-[#e0e0e0]">
+                <div key={cat.id} id={cat.id} className="border border-[#e0e0e0] overflow-hidden">
                   <div className="flex items-center gap-3 p-5 bg-[#f7f8fa] border-b border-[#e0e0e0]">
                     <Icon size={22} className="text-[#003da5]" />
                     <h2 className="text-[16px] font-bold text-[#1a1a1a]">{cat.title}</h2>
                   </div>
-                  <div className="p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                    {cat.items.map((item) => (
-                      <a
-                        key={item.link}
-                        href={item.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 p-3 rounded-sm hover:bg-[#f7f8fa] group transition-colors"
-                      >
-                        <ArrowRight size={14} className="text-[#999] group-hover:text-[#003da5] flex-shrink-0" />
-                        <span className="text-[13px] text-[#333] group-hover:text-[#003da5] transition-colors">{item.name}</span>
-                        <ExternalLink size={12} className="text-[#ccc] ml-auto flex-shrink-0" />
-                      </a>
-                    ))}
+                  <div className="p-5">
+                    {cat.image && (
+                      <div className="mb-4 h-40 relative overflow-hidden">
+                        <Image
+                          src={cat.image}
+                          alt={cat.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 1400px) 100vw, 1400px"
+                        />
+                      </div>
+                    )}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                      {cat.items.map((item) => (
+                        <a
+                          key={item.link}
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 p-3 rounded-sm hover:bg-[#f7f8fa] group transition-colors"
+                        >
+                          <ArrowRight size={14} className="text-[#999] group-hover:text-[#003da5] flex-shrink-0" />
+                          <span className="text-[13px] text-[#333] group-hover:text-[#003da5] transition-colors">{item.name}</span>
+                          <ExternalLink size={12} className="text-[#ccc] ml-auto flex-shrink-0" />
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
               );

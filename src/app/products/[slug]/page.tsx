@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { CheckCircle } from 'lucide-react';
@@ -43,7 +44,6 @@ export default async function ProductDetailPage({ params }: Props) {
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#0a1628] via-[#0f2847] to-[#003da5] text-white relative">
-        <div className="absolute inset-0 opacity-15 bg-[url('/images/hero/hero-2.jpg')] bg-cover bg-center" />
         <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16 flex items-center min-h-[280px]">
           <div className="max-w-2xl">
             <p className="text-[11px] uppercase tracking-[0.2em] text-blue-300 font-medium mb-2">Measurement Solutions</p>
@@ -62,10 +62,22 @@ export default async function ProductDetailPage({ params }: Props) {
           />
           <div className="mt-8 space-y-6">
             {product.subItems.map((sub, idx) => (
-              <div key={sub.name} className="border border-[#e0e0e0] grid grid-cols-1 md:grid-cols-3 gap-0 hover:shadow-md transition-shadow">
+              <div key={sub.name} className="border border-[#e0e0e0] grid grid-cols-1 md:grid-cols-3 gap-0 hover:shadow-md transition-shadow overflow-hidden">
                 {/* Image */}
-                <div className="bg-gradient-to-br from-[#003da5]/10 to-[#003da5]/5 flex items-center justify-center min-h-[200px]">
-                  <span className="text-[#003da5]/20 text-4xl font-bold">{idx + 1}</span>
+                <div className="relative min-h-[200px] bg-[#f7f8fa]">
+                  {sub.image ? (
+                    <Image
+                      src={sub.image}
+                      alt={sub.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  ) : (
+                    <div className="flex items-center justify-center h-full">
+                      <span className="text-[#003da5]/20 text-4xl font-bold">{idx + 1}</span>
+                    </div>
+                  )}
                 </div>
                 {/* Content */}
                 <div className="md:col-span-2 p-6">

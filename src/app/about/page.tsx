@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import SectionHeading from '@/components/shared/SectionHeading';
 import { siteConfig } from '@/data/site';
@@ -12,13 +13,13 @@ const leaders = [
   {
     name: 'Ghulam Sarwar Khan',
     title: 'CEO / Founder',
-    initials: 'GSK',
+    image: '/images/leaders/ghulam-sarwar.jpg',
     bio: 'With over 25 years of experience in industrial automation, Ghulam Sarwar Khan founded Automation Technology with a vision to bring world-class automation solutions to Pakistan. His leadership has grown the company from a small trading firm to Pakistan\'s leading Festo distributor and instrumentation specialist.',
   },
   {
     name: 'Emaad Yaseen Saeed',
     title: 'Director',
-    initials: 'EYS',
+    image: '/images/leaders/emaad-yasin.jpg',
     bio: 'Emaad Yaseen Saeed brings strategic vision and modern management practices to Automation Technology. He oversees business development, strategic partnerships and the company\'s expansion into new industrial sectors across Pakistan.',
   },
 ];
@@ -35,7 +36,6 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#0a1628] via-[#0f2847] to-[#003da5] text-white relative">
-        <div className="absolute inset-0 opacity-15 bg-[url('/images/about/what.webp')] bg-cover bg-center" />
         <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 flex items-center min-h-[300px]">
           <div className="max-w-2xl">
             <p className="text-[11px] uppercase tracking-[0.2em] text-blue-300 font-medium mb-2">About Us</p>
@@ -65,12 +65,14 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="relative h-[280px] bg-gradient-to-br from-[#003da5]/10 to-[#003da5]/5 border border-[#e0e0e0] flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-5xl font-bold text-[#003da5]/20 mb-2">AT</div>
-                <p className="text-[13px] text-[#666]">Automation Technology</p>
-                <p className="text-[11px] text-[#999]">Est. 2006 &bull; Lahore, Pakistan</p>
-              </div>
+            <div className="relative h-[280px] overflow-hidden">
+              <Image
+                src="/images/about-portfolio.webp"
+                alt="Automation Technology Portfolio"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>
@@ -91,14 +93,20 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership */}
-      <section className="py-14 bg-white">
+      <section className="py-14 bg-white" id="leadership">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading title="Our Leadership" subtitle="Meet the people driving Automation Technology's growth and innovation." />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 max-w-4xl mx-auto">
             {leaders.map((leader) => (
               <div key={leader.name} className="border border-[#e0e0e0] overflow-hidden hover:shadow-md transition-shadow">
-                <div className="h-56 relative bg-gradient-to-br from-[#0a1628] to-[#003da5] flex items-center justify-center">
-                  <span className="text-4xl font-bold text-white/25">{leader.initials}</span>
+                <div className="h-56 relative overflow-hidden">
+                  <Image
+                    src={leader.image}
+                    alt={leader.name}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
                 <div className="p-5">
                   <h3 className="text-[16px] font-semibold text-[#1a1a1a]">{leader.name}</h3>

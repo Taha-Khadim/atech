@@ -1,33 +1,27 @@
-import { type LucideIcon } from 'lucide-react';
-
 export interface NavChild {
   label: string;
   href: string;
   description?: string;
 }
 
-export interface NavCategory {
-  title: string;
-  href?: string;
+export interface NavGroup {
+  heading: string;
   children: NavChild[];
+}
+
+export interface NavColumn {
+  title: string;
+  groups: NavGroup[];
 }
 
 export interface NavItem {
   label: string;
   href: string;
-  megaMenu?: NavCategory[];
+  hasDropdown?: boolean;
+  dropdownType?: 'mega' | 'simple';
+  megaColumns?: NavColumn[];
+  simpleLinks?: NavChild[];
 }
-
-export interface UtilityLink {
-  label: string;
-  href: string;
-}
-
-export const utilityLinks: UtilityLink[] = [
-  { label: 'About Us', href: '/about' },
-  { label: 'Careers', href: '/about' },
-  { label: 'Contact Us', href: '/contact' },
-];
 
 export const mainNavItems: NavItem[] = [
   {
@@ -37,25 +31,73 @@ export const mainNavItems: NavItem[] = [
   {
     label: 'Products',
     href: '/products',
-    megaMenu: [
+    hasDropdown: true,
+    dropdownType: 'mega',
+    megaColumns: [
       {
-        title: 'Measurement',
-        href: '/products',
-        children: [
-          { label: 'Pressure Measurement', href: '/products/pressure-measurement', description: 'Gauges, transmitters, sensors & switches' },
-          { label: 'Temperature Measurement', href: '/products/temperature-measurement', description: 'Transmitters, controllers & sensors' },
-          { label: 'Flow Measurement', href: '/products/flow-measurement', description: 'Flow meters & transmitters' },
-          { label: 'Level Measurement', href: '/products/level-measurement', description: 'Level sensors & transmitters' },
-          { label: 'Analysis Measurement', href: '/products/analysis-measurement', description: 'Gas & liquid analyzers' },
-          { label: 'Density Measurement', href: '/products/density-measurement', description: 'Density meters & transmitters' },
+        title: 'Measurement Instrumentation',
+        groups: [
+          {
+            heading: 'INSTRUMENTS',
+            children: [
+              { label: 'Pressure Measurement', href: '/products/pressure-measurement' },
+              { label: 'Temperature Measurement', href: '/products/temperature-measurement' },
+              { label: 'Level Measurement', href: '/products/level-measurement' },
+              { label: 'Flow Measurement', href: '/products/flow-measurement' },
+              { label: 'Gas Analysis', href: '/products/analysis-measurement' },
+            ],
+          },
+          {
+            heading: 'ANALYSIS',
+            children: [
+              { label: 'Gas Analysis', href: '/products/analysis-measurement' },
+              { label: 'Liquid Analysis', href: '/products/analysis-measurement' },
+              { label: 'Flame & Gas Detection', href: '/products/analysis-measurement' },
+              { label: 'Density & Viscosity', href: '/products/density-measurement' },
+              { label: 'Industrial Wireless Technology', href: '/products' },
+            ],
+          },
+          {
+            heading: 'BRANDS',
+            children: [
+              { label: 'Schubert & Salzer (Germany)', href: '/products' },
+              { label: 'Clark Reliance (USA)', href: '/products' },
+              { label: 'Schmersal (Germany)', href: '/products' },
+              { label: 'Festo (Germany)', href: '/festo-germany' },
+              { label: 'Herolift (China)', href: '/products' },
+              { label: 'SunCom (China)', href: '/products' },
+            ],
+          },
         ],
       },
       {
-        title: 'Services',
-        children: [
-          { label: 'Measurement Solutions', href: '/products#measurement-solutions', description: 'Complete measurement system design' },
-          { label: 'Project Execution Services', href: '/products#project-execution', description: 'End-to-end project delivery' },
-          { label: 'Discrete Automation', href: '/products#discrete-automation', description: 'Industrial automation systems' },
+        title: 'Automation System',
+        groups: [
+          {
+            heading: 'PRODUCTS & SOFTWARE',
+            children: [
+              { label: 'Distributed Control Systems', href: '/products' },
+              { label: 'SCADA Systems', href: '/products' },
+              { label: 'Manufacturing Execution Systems', href: '/products' },
+              { label: 'Asset Performance Management', href: '/products' },
+              { label: 'Safety Instrumented Systems', href: '/products' },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Test & Measurement',
+        groups: [
+          {
+            heading: 'PRODUCTS',
+            children: [
+              { label: 'Switches', href: '/products' },
+              { label: 'NI Data Acquisition', href: '/products' },
+              { label: 'NI Software', href: '/products' },
+              { label: 'Calibration Equipment', href: '/products' },
+              { label: 'Vibration Monitoring', href: '/products' },
+            ],
+          },
         ],
       },
     ],
@@ -63,41 +105,30 @@ export const mainNavItems: NavItem[] = [
   {
     label: 'Industries',
     href: '/industries',
-    megaMenu: [
-      {
-        title: 'Industries We Serve',
-        href: '/industries',
-        children: [
-          { label: 'Oil & Gas', href: '/industries/oil-gas', description: 'Upstream, midstream & downstream solutions' },
-          { label: 'Power', href: '/industries/power', description: 'Power generation & distribution' },
-          { label: 'Mining & Metal', href: '/industries/mining-metal', description: 'Extraction & processing automation' },
-          { label: 'Food & Beverage', href: '/industries/food-beverage', description: 'Hygienic processing & packaging' },
-          { label: 'Pulp & Paper', href: '/industries/pulp-paper', description: 'Process optimization & control' },
-        ],
-      },
+    hasDropdown: true,
+    dropdownType: 'simple',
+    simpleLinks: [
+      { label: 'Oil & Gas', href: '/industries/oil-gas' },
+      { label: 'Power', href: '/industries/power' },
+      { label: 'Mining & Metal', href: '/industries/mining-metal' },
+      { label: 'Food & Beverage', href: '/industries/food-beverage' },
+      { label: 'Pulp & Paper', href: '/industries/pulp-paper' },
     ],
   },
   {
-    label: 'Festo',
-    href: '/festo-germany',
-    megaMenu: [
-      {
-        title: 'Festo Products',
-        href: '/festo-germany',
-        children: [
-          { label: 'Actuators & Drives', href: '/festo-germany#actuators', description: 'Pneumatic & electromechanical actuators' },
-          { label: 'Valves & Valve Manifolds', href: '/festo-germany#valves', description: 'Solenoid, proportional & manual valves' },
-          { label: 'Compressed Air Preparation', href: '/festo-germany#compressed-air', description: 'Filters, regulators & lubricators' },
-          { label: 'Pneumatic Fittings & Tubing', href: '/festo-germany#fittings', description: 'Push-in & threaded fittings, tubing' },
-          { label: 'Sensors & Controls', href: '/festo-germany#sensors', description: 'Proximity, pressure & optical sensors' },
-          { label: 'Electric Drives & Controls', href: '/festo-germany#electric-drives', description: 'Servo & stepper motors, controllers' },
-          { label: 'Handling & Assembly', href: '/festo-germany#handling', description: 'Handling systems, grippers & vacuum' },
-        ],
-      },
-    ],
+    label: 'Support',
+    href: '/contact',
   },
   {
-    label: 'About',
+    label: 'Company',
     href: '/about',
+    hasDropdown: true,
+    dropdownType: 'simple',
+    simpleLinks: [
+      { label: 'Leadership', href: '/about#leadership' },
+      { label: 'Company History', href: '/about#history' },
+      { label: 'Our Purpose', href: '/about#purpose' },
+      { label: 'Sustainability', href: '/about#sustainability' },
+    ],
   },
 ];

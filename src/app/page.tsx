@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Gauge, Thermometer, Waves, Layers, FlaskConical, Scale, Monitor, History, Globe, Wrench, ArrowRight, Settings, ClipboardCheck, Cpu } from 'lucide-react';
 import SectionHeading from '@/components/shared/SectionHeading';
 import { measurementCategories, services } from '@/data/products';
@@ -7,6 +8,12 @@ import { industries } from '@/data/industries';
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Gauge, Thermometer, Waves, Layers, FlaskConical, Scale,
   Settings, ClipboardCheck, Cpu,
+};
+
+const serviceImages: Record<string, string> = {
+  'Measurement Solutions': '/images/services/measurement.jpg',
+  'Project Execution Services': '/images/services/project-execution.jpg',
+  'Discrete Automation': '/images/services/discrete-automation.jpg',
 };
 
 const features = [
@@ -77,15 +84,27 @@ export default function HomePage() {
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
             {services.map((s) => {
-              const Icon = iconMap[s.icon] || Settings;
+              const svcImg = serviceImages[s.title];
               return (
-                <div key={s.title} className="bg-white p-6 border border-[#e0e0e0] hover:border-[#003da5]/30 hover:shadow-md transition-all group">
-                  <Icon size={28} className="text-[#003da5] mb-3" />
-                  <h3 className="text-[15px] font-semibold text-[#1a1a1a] mb-2">{s.title}</h3>
-                  <p className="text-[13px] text-[#666] leading-relaxed mb-4">{s.description}</p>
-                  <Link href="/products" className="inline-flex items-center text-[12px] font-semibold text-[#003da5] uppercase tracking-wide hover:underline group-hover:gap-2 gap-1 transition-all">
-                    Discover Now <ArrowRight size={14} />
-                  </Link>
+                <div key={s.title} className="bg-white border border-[#e0e0e0] hover:border-[#003da5]/30 hover:shadow-md transition-all group overflow-hidden">
+                  {svcImg && (
+                    <div className="h-40 relative overflow-hidden">
+                      <Image
+                        src={svcImg}
+                        alt={s.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                      />
+                    </div>
+                  )}
+                  <div className="p-6">
+                    <h3 className="text-[15px] font-semibold text-[#1a1a1a] mb-2">{s.title}</h3>
+                    <p className="text-[13px] text-[#666] leading-relaxed mb-4">{s.description}</p>
+                    <Link href="/products" className="inline-flex items-center text-[12px] font-semibold text-[#003da5] uppercase tracking-wide hover:underline group-hover:gap-2 gap-1 transition-all">
+                      Discover Now <ArrowRight size={14} />
+                    </Link>
+                  </div>
                 </div>
               );
             })}
@@ -132,8 +151,14 @@ export default function HomePage() {
                 href={`/industries/${ind.slug}`}
                 className="bg-white border border-[#e0e0e0] overflow-hidden group hover:shadow-md hover:border-[#003da5]/30 transition-all"
               >
-                <div className={`h-32 bg-gradient-to-br ${ind.gradient} flex items-center justify-center relative`}>
-                  <span className="text-4xl font-bold text-white/15">{ind.iconLetter}</span>
+                <div className="h-32 relative overflow-hidden">
+                  <Image
+                    src={ind.image}
+                    alt={ind.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <div className="absolute bottom-3 left-3">
                     <span className="text-white text-[14px] font-semibold">{ind.title}</span>

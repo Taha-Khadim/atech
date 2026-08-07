@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import SectionHeading from '@/components/shared/SectionHeading';
@@ -37,8 +38,14 @@ export default function IndustriesPage() {
                 href={`/industries/${ind.slug}`}
                 className="border border-[#e0e0e0] overflow-hidden group hover:shadow-md hover:border-[#003da5]/30 transition-all"
               >
-                <div className={`h-44 relative overflow-hidden bg-gradient-to-br ${ind.gradient} flex items-center justify-center`}>
-                  <span className="text-6xl font-bold text-white/15">{ind.iconLetter}</span>
+                <div className="h-44 relative overflow-hidden">
+                  <Image
+                    src={ind.image}
+                    alt={ind.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                   <div className="absolute bottom-4 left-4">
                     <h3 className="text-white text-[18px] font-bold">{ind.title}</h3>

@@ -1,0 +1,1170 @@
+     1→
+     2→                <img width="598" height="148" src="https://automationtechnology.com.pk/wp-content/uploads/2026/04/ati-logo.png" class="attachment-full size-full" alt="" style="max-width:175px;" decoding="async" srcset="https://automationtechnology.com.pk/wp-content/uploads/2026/04/ati-logo.png 598w, https://automationtechnology.com.pk/wp-content/uploads/2026/04/ati-logo-400x99.png 400w, https://automationtechnology.com.pk/wp-content/uploads/2026/04/ati-logo-430x106.png 430w, https://automationtechnology.com.pk/wp-content/uploads/2026/04/ati-logo-150x37.png 150w, https://automationtechnology.com.pk/wp-content/uploads/2026/04/ati-logo-220x55.png 220w" sizes="(max-width: 598px) 100vw, 598px">      
+     3→---SEPARATOR---
+     4→
+     5→        <ul id="menu-main-navigation" class="menu wd-nav wd-nav-header wd-nav-main wd-style-default wd-gap-s"><li id="menu-item-29829" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-29829 item-level-0 menu-simple-dropdown wd-event-hover"><a href="https://automationtechnology.com.pk/" class="woodmart-nav-link"><span class="nav-link-text">Home</span></a></li>
+     6→<li id="menu-item-30958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30958 item-level-0 menu-mega-dropdown wd-event-hover dropdown-with-height" style="--wd-dropdown-height: 350px;--wd-dropdown-padding: -1px;"><a href="#" class="woodmart-nav-link"><span class="nav-link-text">Products</span></a><div class="color-scheme-dark wd-design-aside wd-dropdown-menu wd-dropdown wd-style-default"><div class="container wd-entry-content"><div class="wd-sub-menu-wrapp">
+     7→<ul class="wd-sub-menu color-scheme-dark">
+     8→        <li id="menu-item-29113" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29113 item-level-1 wd-event-hover menu-item-has-children"><a href="#" class="woodmart-nav-link">Measurement Instrumentation</a>
+     9→        <div class="wd-dropdown-menu wd-dropdown wd-design-default color-scheme-dark">
+    10→
+    11→        <div class="container wd-entry-content">
+    12→                        <link rel="stylesheet" id="elementor-post-29328-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-29328.css?ver=1786072195" type="text/css" media="all">
+    13→                                        <div data-elementor-type="wp-post" data-elementor-id="29328" class="elementor elementor-29328">
+    14→                                <div class="wd-negative-gap elementor-element elementor-element-1393f0c e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="1393f0c" data-element_type="container" data-e-type="container">
+    15→                                        <div class="e-con-inner">
+    16→                <div class="elementor-element elementor-element-8ad99cd e-con-full e-flex e-con e-child" data-id="8ad99cd" data-element_type="container" data-e-type="container">
+    17→                                <div class="elementor-element elementor-element-80d5123 elementor-widget elementor-widget-wd_extra_menu_list" data-id="80d5123" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+    18→                                <div class="elementor-widget-container">
+    19→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+    20→                                <li class="item-with-label item-label-primary">
+    21→                                                                                        <a>
+    22→                                                                                                                                                                                
+    23→                                                                                                                        INSTRUMENTS                                                     
+    24→                                                                                                        </a>
+    25→                                        
+    26→                                        <ul class="sub-sub-menu">
+    27→                                                                                                        
+    28→                                                        <li class="item-with-label item-label-primary">
+    29→                                                                <a href="https://automationtechnology.com.pk/pressure-measurement/">
+    30→                                                                                                                                                                                                                                
+    31→                                                                                                                                                        Pressure Measurement                                                                    
+    32→                                                                                                                                        </a>
+    33→                                                        </li>
+    34→                                                                                                        
+    35→                                                        <li class="item-with-label item-label-primary">
+    36→                                                                <a href="https://automationtechnology.com.pk/temperature-measurement/">
+    37→                                                                                                                                                                                                                                
+    38→                                                                                                                                                        Temperature Measurement                                                                 
+    39→                                                                                                                                        </a>
+    40→                                                        </li>
+    41→                                                                                                        
+    42→                                                        <li class="item-with-label item-label-primary">
+    43→                                                                <a href="#">
+    44→                                                                                                                                                                                                                                
+    45→                                                                                                                                                        Level Measurement                                                                       
+    46→                                                                                                                                        </a>
+    47→                                                        </li>
+    48→                                                                                                        
+    49→                                                        <li class="item-with-label item-label-primary">
+    50→                                                                <a href="#">
+    51→                                                                                                                                                                                                                                
+    52→                                                                                                                                                        Flow Measurement                                                                        
+    53→                                                                                                                                        </a>
+    54→                                                        </li>
+    55→                                                                                                        
+    56→                                                        <li class="item-with-label item-label-primary">
+    57→                                                                <a href="#">
+    58→                                                                                                                                                                                                                                
+    59→                                                                                                                                                        Gas Analysis                                                                    
+    60→                                                                                                                                        </a>
+    61→                                                        </li>
+    62→                                                                                        </ul>
+    63→                                </li>
+    64→                        </ul>
+    65→                                                </div>
+    66→                                </div>
+    67→                                </div>
+    68→                <div class="elementor-element elementor-element-3fe11e4 e-con-full e-flex e-con e-child" data-id="3fe11e4" data-element_type="container" data-e-type="container">
+    69→                                <div class="elementor-element elementor-element-5b57233 elementor-widget elementor-widget-wd_extra_menu_list" data-id="5b57233" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+    70→                                <div class="elementor-widget-container">
+    71→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+    72→                                <li class="item-with-label item-label-primary">
+    73→                                        
+    74→                                        <ul class="sub-sub-menu">
+    75→                                                                                                        
+    76→                                                        <li class="item-with-label item-label-primary">
+    77→                                                                <a href="#">
+    78→                                                                                                                                                                                                                                
+    79→                                                                                                                                                        Gas Analysis                                                                    
+    80→                                                                                                                                        </a>
+    81→                                                        </li>
+    82→                                                                                                        
+    83→                                                        <li class="item-with-label item-label-primary">
+    84→                                                                <a href="#">
+    85→                                                                                                                                                                                                                                
+    86→                                                                                                                                                        Liquid Analysis                                                                 
+    87→                                                                                                                                        </a>
+    88→                                                        </li>
+    89→                                                                                                        
+    90→                                                        <li class="item-with-label item-label-primary">
+    91→                                                                <a href="#">
+    92→                                                                                                                                                                                                                                
+    93→                                                                                                                                                        Flame &amp; Gas Detection                                                                       
+    94→                                                                                                                                        </a>
+    95→                                                        </li>
+    96→                                                                                                        
+    97→                                                        <li class="item-with-label item-label-primary">
+    98→                                                                <a href="#">
+    99→                                                                                                                                                                                                                                
+   100→                                                                                                                                                        Density &amp; Viscosity                                                                 
+   101→                                                                                                                                        </a>
+   102→                                                        </li>
+   103→                                                                                                        
+   104→                                                        <li class="item-with-label item-label-primary">
+   105→                                                                <a href="#">
+   106→                                                                                                                                                                                                                                
+   107→                                                                                                                                                        Industrial Wireless Technology                                                                  
+   108→                                                                                                                                        </a>
+   109→                                                        </li>
+   110→                                                                                        </ul>
+   111→                                </li>
+   112→                        </ul>
+   113→                                                </div>
+   114→                                </div>
+   115→                                </div>
+   116→                <div class="elementor-element elementor-element-ccd91c1 e-con-full e-flex e-con e-child" data-id="ccd91c1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+   117→                                <div class="elementor-element elementor-element-9d53cd8 elementor-widget elementor-widget-wd_extra_menu_list" data-id="9d53cd8" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   118→                                <div class="elementor-widget-container">
+   119→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   120→                                <li class="item-with-label item-label-primary">
+   121→                                                                                        <a>
+   122→                                                                                                                                                                                
+   123→                                                                                                                        Brands                                                  
+   124→                                                                                                        </a>
+   125→                                        
+   126→                                        <ul class="sub-sub-menu">
+   127→                                                                                                        
+   128→                                                        <li class="item-with-label item-label-primary">
+   129→                                                                <a href="#">
+   130→                                                                                                                                                                                                                                
+   131→                                                                                                                                                        Schubert &amp; Salzer (Germany)                                                                 
+   132→                                                                                                                                        </a>
+   133→                                                        </li>
+   134→                                                                                                        
+   135→                                                        <li class="item-with-label item-label-primary">
+   136→                                                                <a href="#">
+   137→                                                                                                                                                                                                                                
+   138→                                                                                                                                                        Clark Reliance (USA)                                                                    
+   139→                                                                                                                                        </a>
+   140→                                                        </li>
+   141→                                                                                                        
+   142→                                                        <li class="item-with-label item-label-primary">
+   143→                                                                <a href="#">
+   144→                                                                                                                                                                                                                                
+   145→                                                                                                                                                        Schmersal (Germany)                                                                     
+   146→                                                                                                                                        </a>
+   147→                                                        </li>
+   148→                                                                                                        
+   149→                                                        <li class="item-with-label item-label-black">
+   150→                                                                <a href="https://automationtechnology.com.pk/festo-germany/">
+   151→                                                                                                                                                                                                                                
+   152→                                                                                                                                                        Festo (Germany)                                                                 
+   153→                                                                                                                                        </a>
+   154→                                                        </li>
+   155→                                                                                                        
+   156→                                                        <li class="item-with-label item-label-primary">
+   157→                                                                <a href="#">
+   158→                                                                                                                                                                                                                                
+   159→                                                                                                                                                        Herolift  (China)                                                                       
+   160→                                                                                                                                        </a>
+   161→                                                        </li>
+   162→                                                                                                        
+   163→                                                        <li class="item-with-label item-label-primary">
+   164→                                                                <a href="#">
+   165→                                                                                                                                                                                                                                
+   166→                                                                                                                                                        SunCom (China)                                                                  
+   167→                                                                                                                                        </a>
+   168→                                                        </li>
+   169→                                                                                        </ul>
+   170→                                </li>
+   171→                        </ul>
+   172→                                                </div>
+   173→                                </div>
+   174→                                </div>
+   175→                                        </div>
+   176→                                </div>
+   177→                                </div>
+   178→                
+   179→        </div>
+   180→
+   181→        </div>
+   182→</li>
+   183→        <li id="menu-item-28984" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28984 item-level-1 wd-event-hover menu-item-has-children dropdown-with-height" style="--wd-dropdown-height: 495px;--wd-dropdown-width: 1100px;--wd-dropdown-padding: 0px;"><a href="#" class="woodmart-nav-link">Automation System</a>
+   184→        <div class="wd-dropdown-menu wd-dropdown wd-design-sized color-scheme-dark">
+   185→
+   186→        <div class="container wd-entry-content">
+   187→                        <link rel="stylesheet" id="elementor-post-29334-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-29334.css?ver=1786072197" type="text/css" media="all">
+   188→                                        <div data-elementor-type="wp-post" data-elementor-id="29334" class="elementor elementor-29334">
+   189→                                <div class="wd-negative-gap elementor-element elementor-element-1393f0c e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="1393f0c" data-element_type="container" data-e-type="container">
+   190→                                        <div class="e-con-inner">
+   191→                <div class="elementor-element elementor-element-8ad99cd e-con-full e-flex e-con e-child" data-id="8ad99cd" data-element_type="container" data-e-type="container">
+   192→                                <div class="elementor-element elementor-element-80d5123 elementor-widget elementor-widget-wd_extra_menu_list" data-id="80d5123" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   193→                                <div class="elementor-widget-container">
+   194→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   195→                                <li class="item-with-label item-label-primary">
+   196→                                                                                        <a>
+   197→                                                                                                                                                                                
+   198→                                                                                                                        PRODUCTS &amp; SOFTWARE                                                 
+   199→                                                                                                        </a>
+   200→                                        
+   201→                                        <ul class="sub-sub-menu">
+   202→                                                                                                        
+   203→                                                        <li class="item-with-label item-label-primary">
+   204→                                                                <a href="#">
+   205→                                                                                                                                                                                                                                
+   206→                                                                                                                                                        Distributed Control Systems                                                                     
+   207→                                                                                                                                        </a>
+   208→                                                        </li>
+   209→                                                                                                        
+   210→                                                        <li class="item-with-label item-label-primary">
+   211→                                                                <a href="#">
+   212→                                                                                                                                                                                                                                
+   213→                                                                                                                                                         SCADA Systems                                                                  
+   214→                                                                                                                                        </a>
+   215→                                                        </li>
+   216→                                                                                                        
+   217→                                                        <li class="item-with-label item-label-primary">
+   218→                                                                <a href="#">
+   219→                                                                                                                                                                                                                                
+   220→                                                                                                                                                        Manufacturing Execution Systems                                                                 
+   221→                                                                                                                                        </a>
+   222→                                                        </li>
+   223→                                                                                                        
+   224→                                                        <li class="item-with-label item-label-primary">
+   225→                                                                <a href="#">
+   226→                                                                                                                                                                                                                                
+   227→                                                                                                                                                        Asset Performance Management                                                                    
+   228→                                                                                                                                        </a>
+   229→                                                        </li>
+   230→                                                                                                        
+   231→                                                        <li class="item-with-label item-label-primary">
+   232→                                                                <a href="#">
+   233→                                                                                                                                                                                                                                
+   234→                                                                                                                                                        Safety Instrumented Systems                                                                     
+   235→                                                                                                                                        </a>
+   236→                                                        </li>
+   237→                                                                                        </ul>
+   238→                                </li>
+   239→                        </ul>
+   240→                                                </div>
+   241→                                </div>
+   242→                                </div>
+   243→                <div class="elementor-element elementor-element-ccd91c1 e-con-full e-flex e-con e-child" data-id="ccd91c1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+   244→                                <div class="elementor-element elementor-element-9d53cd8 elementor-widget elementor-widget-wd_extra_menu_list" data-id="9d53cd8" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   245→                                <div class="elementor-widget-container">
+   246→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   247→                                <li class="item-with-label item-label-primary">
+   248→                                                                                        <a>
+   249→                                                                                                                                                                                
+   250→                                                                                                                        Brands                                                  
+   251→                                                                                                        </a>
+   252→                                        
+   253→                                        <ul class="sub-sub-menu">
+   254→                                                                                                        
+   255→                                                        <li class="item-with-label item-label-primary">
+   256→                                                                <a href="#">
+   257→                                                                                                                                                                                                                                
+   258→                                                                                                                                                        Schubert &amp; Salzer (Germany)                                                                 
+   259→                                                                                                                                        </a>
+   260→                                                        </li>
+   261→                                                                                                        
+   262→                                                        <li class="item-with-label item-label-primary">
+   263→                                                                <a href="#">
+   264→                                                                                                                                                                                                                                
+   265→                                                                                                                                                        Clark Reliance (USA)                                                                    
+   266→                                                                                                                                        </a>
+   267→                                                        </li>
+   268→                                                                                                        
+   269→                                                        <li class="item-with-label item-label-primary">
+   270→                                                                <a href="#">
+   271→                                                                                                                                                                                                                                
+   272→                                                                                                                                                        Schmersal (Germany)                                                                     
+   273→                                                                                                                                        </a>
+   274→                                                        </li>
+   275→                                                                                                        
+   276→                                                        <li class="item-with-label item-label-black">
+   277→                                                                <a href="https://automationtechnology.com.pk/festo-germany/">
+   278→                                                                                                                                                                                                                                
+   279→                                                                                                                                                        Festo (Germany)                                                                 
+   280→                                                                                                                                        </a>
+   281→                                                        </li>
+   282→                                                                                                        
+   283→                                                        <li class="item-with-label item-label-primary">
+   284→                                                                <a href="#">
+   285→                                                                                                                                                                                                                                
+   286→                                                                                                                                                        Herolift  (China)                                                                       
+   287→                                                                                                                                        </a>
+   288→                                                        </li>
+   289→                                                                                                        
+   290→                                                        <li class="item-with-label item-label-primary">
+   291→                                                                <a href="#">
+   292→                                                                                                                                                                                                                                
+   293→                                                                                                                                                        SunCom (China)                                                                  
+   294→                                                                                                                                        </a>
+   295→                                                        </li>
+   296→                                                                                        </ul>
+   297→                                </li>
+   298→                        </ul>
+   299→                                                </div>
+   300→                                </div>
+   301→                                </div>
+   302→                                        </div>
+   303→                                </div>
+   304→                                </div>
+   305→                
+   306→        </div>
+   307→
+   308→        </div>
+   309→</li>
+   310→        <li id="menu-item-28985" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28985 item-level-1 wd-event-hover menu-item-has-children dropdown-with-height" style="--wd-dropdown-height: 495px;--wd-dropdown-width: 1100px;--wd-dropdown-padding: 0px;"><a href="#" class="woodmart-nav-link">Test &amp; Measurement</a>
+   311→        <div class="wd-dropdown-menu wd-dropdown wd-design-sized color-scheme-dark">
+   312→
+   313→        <div class="container wd-entry-content">
+   314→                        <link rel="stylesheet" id="elementor-post-29337-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-29337.css?ver=1786072199" type="text/css" media="all">
+   315→                                        <div data-elementor-type="wp-post" data-elementor-id="29337" class="elementor elementor-29337">
+   316→                                <div class="wd-negative-gap elementor-element elementor-element-1393f0c e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="1393f0c" data-element_type="container" data-e-type="container">
+   317→                                        <div class="e-con-inner">
+   318→                <div class="elementor-element elementor-element-8ad99cd e-con-full e-flex e-con e-child" data-id="8ad99cd" data-element_type="container" data-e-type="container">
+   319→                                <div class="elementor-element elementor-element-80d5123 elementor-widget elementor-widget-wd_extra_menu_list" data-id="80d5123" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   320→                                <div class="elementor-widget-container">
+   321→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   322→                                <li class="item-with-label item-label-primary">
+   323→                                                                                        <a>
+   324→                                                                                                                                                                                
+   325→                                                                                                                        PRODUCTS                                                        
+   326→                                                                                                        </a>
+   327→                                        
+   328→                                        <ul class="sub-sub-menu">
+   329→                                                                                                        
+   330→                                                        <li class="item-with-label item-label-primary">
+   331→                                                                <a href="#">
+   332→                                                                                                                                                                                                                                
+   333→                                                                                                                                                        Switches                                                                        
+   334→                                                                                                                                        </a>
+   335→                                                        </li>
+   336→                                                                                                        
+   337→                                                        <li class="item-with-label item-label-primary">
+   338→                                                                <a href="#">
+   339→                                                                                                                                                                                                                                
+   340→                                                                                                                                                        NI Data Acquisition                                                                     
+   341→                                                                                                                                        </a>
+   342→                                                        </li>
+   343→                                                                                                        
+   344→                                                        <li class="item-with-label item-label-primary">
+   345→                                                                <a href="#">
+   346→                                                                                                                                                                                                                                
+   347→                                                                                                                                                        NI Software                                                                     
+   348→                                                                                                                                        </a>
+   349→                                                        </li>
+   350→                                                                                                        
+   351→                                                        <li class="item-with-label item-label-primary">
+   352→                                                                <a href="#">
+   353→                                                                                                                                                                                                                                
+   354→                                                                                                                                                        Source Measure Units                                                                    
+   355→                                                                                                                                        </a>
+   356→                                                        </li>
+   357→                                                                                                        
+   358→                                                        <li class="item-with-label item-label-primary">
+   359→                                                                <a href="#">
+   360→                                                                                                                                                                                                                                
+   361→                                                                                                                                                        NI Vector Signal Transceivers                                                                   
+   362→                                                                                                                                        </a>
+   363→                                                        </li>
+   364→                                                                                                        
+   365→                                                        <li class="item-with-label item-label-primary">
+   366→                                                                <a href="#">
+   367→                                                                                                                                                                                                                                
+   368→                                                                                                                                                        NI Vector Signal Analyzers                                                                      
+   369→                                                                                                                                        </a>
+   370→                                                        </li>
+   371→                                                                                        </ul>
+   372→                                </li>
+   373→                        </ul>
+   374→                                                </div>
+   375→                                </div>
+   376→                                </div>
+   377→                <div class="elementor-element elementor-element-ccd91c1 e-con-full e-flex e-con e-child" data-id="ccd91c1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+   378→                                <div class="elementor-element elementor-element-9d53cd8 elementor-widget elementor-widget-wd_extra_menu_list" data-id="9d53cd8" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   379→                                <div class="elementor-widget-container">
+   380→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   381→                                <li class="item-with-label item-label-primary">
+   382→                                                                                        <a>
+   383→                                                                                                                                                                                
+   384→                                                                                                                        Brands                                                  
+   385→                                                                                                        </a>
+   386→                                        
+   387→                                        <ul class="sub-sub-menu">
+   388→                                                                                                        
+   389→                                                        <li class="item-with-label item-label-primary">
+   390→                                                                <a href="#">
+   391→                                                                                                                                                                                                                                
+   392→                                                                                                                                                        Schubert &amp; Salzer (Germany)                                                                 
+   393→                                                                                                                                        </a>
+   394→                                                        </li>
+   395→                                                                                                        
+   396→                                                        <li class="item-with-label item-label-primary">
+   397→                                                                <a href="#">
+   398→                                                                                                                                                                                                                                
+   399→                                                                                                                                                        Clark Reliance (USA)                                                                    
+   400→                                                                                                                                        </a>
+   401→                                                        </li>
+   402→                                                                                                        
+   403→                                                        <li class="item-with-label item-label-primary">
+   404→                                                                <a href="#">
+   405→                                                                                                                                                                                                                                
+   406→                                                                                                                                                        Schmersal (Germany)                                                                     
+   407→                                                                                                                                        </a>
+   408→                                                        </li>
+   409→                                                                                                        
+   410→                                                        <li class="item-with-label item-label-black">
+   411→                                                                <a href="https://automationtechnology.com.pk/festo-germany/">
+   412→                                                                                                                                                                                                                                
+   413→                                                                                                                                                        Festo (Germany)                                                                 
+   414→                                                                                                                                        </a>
+   415→                                                        </li>
+   416→                                                                                                        
+   417→                                                        <li class="item-with-label item-label-primary">
+   418→                                                                <a href="#">
+   419→                                                                                                                                                                                                                                
+   420→                                                                                                                                                        Herolift  (China)                                                                       
+   421→                                                                                                                                        </a>
+   422→                                                        </li>
+   423→                                                                                                        
+   424→                                                        <li class="item-with-label item-label-primary">
+   425→                                                                <a href="#">
+   426→                                                                                                                                                                                                                                
+   427→                                                                                                                                                        SunCom (China)                                                                  
+   428→                                                                                                                                        </a>
+   429→                                                        </li>
+   430→                                                                                        </ul>
+   431→                                </li>
+   432→                        </ul>
+   433→                                                </div>
+   434→                                </div>
+   435→                                </div>
+   436→                                        </div>
+   437→                                </div>
+   438→                                </div>
+   439→                
+   440→        </div>
+   441→
+   442→        </div>
+   443→</li>
+   444→        <li id="menu-item-28986" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28986 item-level-1 wd-event-hover menu-item-has-children dropdown-with-height" style="--wd-dropdown-height: 495px;--wd-dropdown-width: 1099px;--wd-dropdown-padding: 0px;"><a href="#" class="woodmart-nav-link">Discrete Automation</a>
+   445→        <div class="wd-dropdown-menu wd-dropdown wd-design-sized color-scheme-dark">
+   446→
+   447→        <div class="container wd-entry-content">
+   448→                        <link rel="stylesheet" id="elementor-post-29351-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-29351.css?ver=1786072199" type="text/css" media="all">
+   449→                                        <div data-elementor-type="wp-post" data-elementor-id="29351" class="elementor elementor-29351">
+   450→                                <div class="wd-negative-gap elementor-element elementor-element-1393f0c e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="1393f0c" data-element_type="container" data-e-type="container">
+   451→                                        <div class="e-con-inner">
+   452→                <div class="elementor-element elementor-element-8ad99cd e-con-full e-flex e-con e-child" data-id="8ad99cd" data-element_type="container" data-e-type="container">
+   453→                                <div class="elementor-element elementor-element-80d5123 elementor-widget elementor-widget-wd_extra_menu_list" data-id="80d5123" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   454→                                <div class="elementor-widget-container">
+   455→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   456→                                <li class="item-with-label item-label-primary">
+   457→                                                                                        <a>
+   458→                                                                                                                                                                                
+   459→                                                                                                                        Products &amp; Software                                                 
+   460→                                                                                                        </a>
+   461→                                        
+   462→                                        <ul class="sub-sub-menu">
+   463→                                                                                                        
+   464→                                                        <li class="item-with-label item-label-primary">
+   465→                                                                <a href="#">
+   466→                                                                                                                                                                                                                                
+   467→                                                                                                                                                        Industrial Sensors &amp; Switches                                                                       
+   468→                                                                                                                                        </a>
+   469→                                                        </li>
+   470→                                                                                                        
+   471→                                                        <li class="item-with-label item-label-primary">
+   472→                                                                <a href="#">
+   473→                                                                                                                                                                                                                                
+   474→                                                                                                                                                        Pneumatics                                                                      
+   475→                                                                                                                                        </a>
+   476→                                                        </li>
+   477→                                                                                                        
+   478→                                                        <li class="item-with-label item-label-primary">
+   479→                                                                <a href="#">
+   480→                                                                                                                                                                                                                                
+   481→                                                                                                                                                        Pressure Regulators                                                                     
+   482→                                                                                                                                        </a>
+   483→                                                        </li>
+   484→                                                                                                        
+   485→                                                        <li class="item-with-label item-label-primary">
+   486→                                                                <a href="#">
+   487→                                                                                                                                                                                                                                
+   488→                                                                                                                                                        Valves                                                                  
+   489→                                                                                                                                        </a>
+   490→                                                        </li>
+   491→                                                                                                        
+   492→                                                        <li class="item-with-label item-label-primary">
+   493→                                                                <a href="#">
+   494→                                                                                                                                                                                                                                
+   495→                                                                                                                                                         Marine Controls                                                                        
+   496→                                                                                                                                        </a>
+   497→                                                        </li>
+   498→                                                                                        </ul>
+   499→                                </li>
+   500→                        </ul>
+   501→                                                </div>
+   502→                                </div>
+   503→                                </div>
+   504→                <div class="elementor-element elementor-element-3fe11e4 e-con-full e-flex e-con e-child" data-id="3fe11e4" data-element_type="container" data-e-type="container">
+   505→                                <div class="elementor-element elementor-element-5b57233 elementor-widget elementor-widget-wd_extra_menu_list" data-id="5b57233" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   506→                                <div class="elementor-widget-container">
+   507→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   508→                                <li class="item-with-label item-label-primary">
+   509→                                        
+   510→                                        <ul class="sub-sub-menu">
+   511→                                                                                                        
+   512→                                                        <li class="item-with-label item-label-primary">
+   513→                                                                <a href="#">
+   514→                                                                                                                                                                                                                                
+   515→                                                                                                                                                        Electrical &amp; Lighting                                                                       
+   516→                                                                                                                                        </a>
+   517→                                                        </li>
+   518→                                                                                                        
+   519→                                                        <li class="item-with-label item-label-primary">
+   520→                                                                <a href="#">
+   521→                                                                                                                                                                                                                                
+   522→                                                                                                                                                        Electrical Actuators &amp; Drives                                                                       
+   523→                                                                                                                                        </a>
+   524→                                                        </li>
+   525→                                                                                                        
+   526→                                                        <li class="item-with-label item-label-primary">
+   527→                                                                <a href="#">
+   528→                                                                                                                                                                                                                                
+   529→                                                                                                                                                        Feeding                                                                 
+   530→                                                                                                                                        </a>
+   531→                                                        </li>
+   532→                                                                                                        
+   533→                                                        <li class="item-with-label item-label-primary">
+   534→                                                                <a href="#">
+   535→                                                                                                                                                                                                                                
+   536→                                                                                                                                                        Handling                                                                        
+   537→                                                                                                                                        </a>
+   538→                                                        </li>
+   539→                                                                                                        
+   540→                                                        <li class="item-with-label item-label-primary">
+   541→                                                                <a href="#">
+   542→                                                                                                                                                                                                                                
+   543→                                                                                                                                                         Electrical &amp; Lighting                                                                      
+   544→                                                                                                                                        </a>
+   545→                                                        </li>
+   546→                                                                                        </ul>
+   547→                                </li>
+   548→                        </ul>
+   549→                                                </div>
+   550→                                </div>
+   551→                                </div>
+   552→                <div class="elementor-element elementor-element-ccd91c1 e-con-full e-flex e-con e-child" data-id="ccd91c1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+   553→                                <div class="elementor-element elementor-element-9d53cd8 elementor-widget elementor-widget-wd_extra_menu_list" data-id="9d53cd8" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   554→                                <div class="elementor-widget-container">
+   555→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   556→                                <li class="item-with-label item-label-primary">
+   557→                                                                                        <a>
+   558→                                                                                                                                                                                
+   559→                                                                                                                        Brands                                                  
+   560→                                                                                                        </a>
+   561→                                        
+   562→                                        <ul class="sub-sub-menu">
+   563→                                                                                                        
+   564→                                                        <li class="item-with-label item-label-primary">
+   565→                                                                <a href="#">
+   566→                                                                                                                                                                                                                                
+   567→                                                                                                                                                        Schubert &amp; Salzer (Germany)                                                                 
+   568→                                                                                                                                        </a>
+   569→                                                        </li>
+   570→                                                                                                        
+   571→                                                        <li class="item-with-label item-label-primary">
+   572→                                                                <a href="#">
+   573→                                                                                                                                                                                                                                
+   574→                                                                                                                                                        Clark Reliance (USA)                                                                    
+   575→                                                                                                                                        </a>
+   576→                                                        </li>
+   577→                                                                                                        
+   578→                                                        <li class="item-with-label item-label-primary">
+   579→                                                                <a href="#">
+   580→                                                                                                                                                                                                                                
+   581→                                                                                                                                                        Schmersal (Germany)                                                                     
+   582→                                                                                                                                        </a>
+   583→                                                        </li>
+   584→                                                                                                        
+   585→                                                        <li class="item-with-label item-label-black">
+   586→                                                                <a href="https://automationtechnology.com.pk/festo-germany/">
+   587→                                                                                                                                                                                                                                
+   588→                                                                                                                                                        Festo (Germany)                                                                 
+   589→                                                                                                                                        </a>
+   590→                                                        </li>
+   591→                                                                                                        
+   592→                                                        <li class="item-with-label item-label-primary">
+   593→                                                                <a href="#">
+   594→                                                                                                                                                                                                                                
+   595→                                                                                                                                                        Herolift  (China)                                                                       
+   596→                                                                                                                                        </a>
+   597→                                                        </li>
+   598→                                                                                                        
+   599→                                                        <li class="item-with-label item-label-primary">
+   600→                                                                <a href="#">
+   601→                                                                                                                                                                                                                                
+   602→                                                                                                                                                        SunCom (China)                                                                  
+   603→                                                                                                                                        </a>
+   604→                                                        </li>
+   605→                                                                                        </ul>
+   606→                                </li>
+   607→                        </ul>
+   608→                                                </div>
+   609→                                </div>
+   610→                                </div>
+   611→                                        </div>
+   612→                                </div>
+   613→                                </div>
+   614→                
+   615→        </div>
+   616→
+   617→        </div>
+   618→</li>
+   619→        <li id="menu-item-28983" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28983 item-level-1 wd-event-hover menu-item-has-children dropdown-with-height" style="--wd-dropdown-height: 495px;--wd-dropdown-width: 1100px;--wd-dropdown-padding: 0px;"><a href="#" class="woodmart-nav-link">Actuators</a>
+   620→        <div class="wd-dropdown-menu wd-dropdown wd-design-sized color-scheme-dark">
+   621→
+   622→        <div class="container wd-entry-content">
+   623→                        <link rel="stylesheet" id="elementor-post-15484-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-15484.css?ver=1786072200" type="text/css" media="all">
+   624→                                        <div data-elementor-type="wp-post" data-elementor-id="15484" class="elementor elementor-15484">
+   625→                                <div class="wd-negative-gap elementor-element elementor-element-1393f0c e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="1393f0c" data-element_type="container" data-e-type="container">
+   626→                                        <div class="e-con-inner">
+   627→                <div class="elementor-element elementor-element-8ad99cd e-con-full e-flex e-con e-child" data-id="8ad99cd" data-element_type="container" data-e-type="container">
+   628→                                <div class="elementor-element elementor-element-80d5123 elementor-widget elementor-widget-wd_extra_menu_list" data-id="80d5123" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   629→                                <div class="elementor-widget-container">
+   630→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   631→                                <li class="item-with-label item-label-primary">
+   632→                                        
+   633→                                        <ul class="sub-sub-menu">
+   634→                                                                                                        
+   635→                                                        <li class="item-with-label item-label-primary">
+   636→                                                                <a href="#">
+   637→                                                                                                                                                                                                                                
+   638→                                                                                                                                                        Controllers                                                                     
+   639→                                                                                                                                        </a>
+   640→                                                        </li>
+   641→                                                                                                        
+   642→                                                        <li class="item-with-label item-label-primary">
+   643→                                                                <a href="#">
+   644→                                                                                                                                                                                                                                
+   645→                                                                                                                                                        Instruments &amp; Software                                                                      
+   646→                                                                                                                                        </a>
+   647→                                                        </li>
+   648→                                                                                                        
+   649→                                                        <li class="item-with-label item-label-primary">
+   650→                                                                <a href="#">
+   651→                                                                                                                                                                                                                                
+   652→                                                                                                                                                        Hydraulic Actuators                                                                     
+   653→                                                                                                                                        </a>
+   654→                                                        </li>
+   655→                                                                                                        
+   656→                                                        <li class="item-with-label item-label-primary">
+   657→                                                                <a href="#">
+   658→                                                                                                                                                                                                                                
+   659→                                                                                                                                                        Electric Actuators                                                                      
+   660→                                                                                                                                        </a>
+   661→                                                        </li>
+   662→                                                                                                        
+   663→                                                        <li class="item-with-label item-label-primary">
+   664→                                                                <a href="#">
+   665→                                                                                                                                                                                                                                
+   666→                                                                                                                                                        Pneumatic Actuators                                                                     
+   667→                                                                                                                                        </a>
+   668→                                                        </li>
+   669→                                                                                                        
+   670→                                                        <li class="item-with-label item-label-primary">
+   671→                                                                <a href="#">
+   672→                                                                                                                                                                                                                                
+   673→                                                                                                                                                        GearboxesPneumatic Cylinders                                                                    
+   674→                                                                                                                                        </a>
+   675→                                                        </li>
+   676→                                                                                                        
+   677→                                                        <li class="item-with-label item-label-primary">
+   678→                                                                <a href="#">
+   679→                                                                                                                                                                                                                                
+   680→                                                                                                                                                        Gear Operators                                                                  
+   681→                                                                                                                                        </a>
+   682→                                                        </li>
+   683→                                                                                        </ul>
+   684→                                </li>
+   685→                        </ul>
+   686→                                                </div>
+   687→                                </div>
+   688→                                </div>
+   689→                <div class="elementor-element elementor-element-ccd91c1 e-con-full e-flex e-con e-child" data-id="ccd91c1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+   690→                                <div class="elementor-element elementor-element-9d53cd8 elementor-widget elementor-widget-wd_extra_menu_list" data-id="9d53cd8" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   691→                                <div class="elementor-widget-container">
+   692→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   693→                                <li class="item-with-label item-label-primary">
+   694→                                                                                        <a>
+   695→                                                                                                                                                                                
+   696→                                                                                                                        Brands                                                  
+   697→                                                                                                        </a>
+   698→                                        
+   699→                                        <ul class="sub-sub-menu">
+   700→                                                                                                        
+   701→                                                        <li class="item-with-label item-label-primary">
+   702→                                                                <a href="#">
+   703→                                                                                                                                                                                                                                
+   704→                                                                                                                                                        Schubert &amp; Salzer (Germany)                                                                 
+   705→                                                                                                                                        </a>
+   706→                                                        </li>
+   707→                                                                                                        
+   708→                                                        <li class="item-with-label item-label-primary">
+   709→                                                                <a href="#">
+   710→                                                                                                                                                                                                                                
+   711→                                                                                                                                                        Clark Reliance (USA)                                                                    
+   712→                                                                                                                                        </a>
+   713→                                                        </li>
+   714→                                                                                                        
+   715→                                                        <li class="item-with-label item-label-primary">
+   716→                                                                <a href="#">
+   717→                                                                                                                                                                                                                                
+   718→                                                                                                                                                        Schmersal (Germany)                                                                     
+   719→                                                                                                                                        </a>
+   720→                                                        </li>
+   721→                                                                                                        
+   722→                                                        <li class="item-with-label item-label-black">
+   723→                                                                <a href="https://automationtechnology.com.pk/festo-germany/">
+   724→                                                                                                                                                                                                                                
+   725→                                                                                                                                                        Festo (Germany)                                                                 
+   726→                                                                                                                                        </a>
+   727→                                                        </li>
+   728→                                                                                                        
+   729→                                                        <li class="item-with-label item-label-primary">
+   730→                                                                <a href="#">
+   731→                                                                                                                                                                                                                                
+   732→                                                                                                                                                        Herolift  (China)                                                                       
+   733→                                                                                                                                        </a>
+   734→                                                        </li>
+   735→                                                                                                        
+   736→                                                        <li class="item-with-label item-label-primary">
+   737→                                                                <a href="#">
+   738→                                                                                                                                                                                                                                
+   739→                                                                                                                                                        SunCom (China)                                                                  
+   740→                                                                                                                                        </a>
+   741→                                                        </li>
+   742→                                                                                        </ul>
+   743→                                </li>
+   744→                        </ul>
+   745→                                                </div>
+   746→                                </div>
+   747→                                </div>
+   748→                                        </div>
+   749→                                </div>
+   750→                                </div>
+   751→                
+   752→        </div>
+   753→
+   754→        </div>
+   755→</li>
+   756→</ul>
+   757→</div>
+   758→</div>
+   759→</div>
+   760→</li>
+   761→<li id="menu-item-28971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28971 item-level-0 menu-mega-dropdown wd-event-hover menu-item-has-children dropdown-with-height" style="--wd-dropdown-height: 340px;--wd-dropdown-width: 1200px;--wd-dropdown-padding: 0px;"><a href="https://automationtechnology.com.pk/blog/" class="woodmart-nav-link"><span class="nav-link-text">Industries</span></a>
+   762→<div class="wd-dropdown-menu wd-dropdown wd-design-sized color-scheme-dark">
+   763→
+   764→<div class="container wd-entry-content">
+   765→                        <link rel="stylesheet" id="elementor-post-29135-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-29135.css?ver=1786072201" type="text/css" media="all">
+   766→                                        <div data-elementor-type="wp-post" data-elementor-id="29135" class="elementor elementor-29135">
+   767→                                <div class="wd-negative-gap elementor-element elementor-element-cf0971a e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="cf0971a" data-element_type="container" data-e-type="container">
+   768→                                        <div class="e-con-inner">
+   769→                <div class="elementor-element elementor-element-01734d1 e-con-full e-flex e-con e-child" data-id="01734d1" data-element_type="container" data-e-type="container">
+   770→                                <div class="elementor-element elementor-element-898a229 elementor-widget elementor-widget-wd_extra_menu_list" data-id="898a229" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   771→                                <div class="elementor-widget-container">
+   772→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   773→                                <li class="item-with-label item-label-red">
+   774→                                        
+   775→                                        <ul class="sub-sub-menu">
+   776→                                                                                                        
+   777→                                                        <li class="item-with-label item-label-primary">
+   778→                                                                <a href="#">
+   779→                                                                                                                                                                                                                                
+   780→                                                                                                                                                        Oil &amp; Gas                                                                   
+   781→                                                                                                                                        </a>
+   782→                                                        </li>
+   783→                                                                                                        
+   784→                                                        <li class="item-with-label item-label-primary">
+   785→                                                                <a href="#">
+   786→                                                                                                                                                                                                                                
+   787→                                                                                                                                                        Chemical                                                                        
+   788→                                                                                                                                        </a>
+   789→                                                        </li>
+   790→                                                                                                        
+   791→                                                        <li class="item-with-label item-label-primary">
+   792→                                                                <a href="#">
+   793→                                                                                                                                                                                                                                
+   794→                                                                                                                                                        Food &amp; Beverage                                                                     
+   795→                                                                                                                                        </a>
+   796→                                                        </li>
+   797→                                                                                                        
+   798→                                                        <li class="item-with-label item-label-primary">
+   799→                                                                <a href="#">
+   800→                                                                                                                                                                                                                                
+   801→                                                                                                                                                        Pulp &amp; Paper                                                                        
+   802→                                                                                                                                        </a>
+   803→                                                        </li>
+   804→                                                                                                        
+   805→                                                        <li class="item-with-label item-label-primary">
+   806→                                                                <a href="#">
+   807→                                                                                                                                                                                                                                
+   808→                                                                                                                                                        Power                                                                   
+   809→                                                                                                                                        </a>
+   810→                                                        </li>
+   811→                                                                                                        
+   812→                                                        <li class="item-with-label item-label-primary">
+   813→                                                                <a href="#">
+   814→                                                                                                                                                                                                                                
+   815→                                                                                                                                                        Water &amp; Wastewater                                                                  
+   816→                                                                                                                                        </a>
+   817→                                                        </li>
+   818→                                                                                                        
+   819→                                                        <li class="item-with-label item-label-primary">
+   820→                                                                <a href="#">
+   821→                                                                                                                                                                                                                                
+   822→                                                                                                                                                        Mining                                                                  
+   823→                                                                                                                                        </a>
+   824→                                                        </li>
+   825→                                                                                                        
+   826→                                                        <li class="item-with-label item-label-primary">
+   827→                                                                <a>
+   828→                                                                                                                                                                                                                                
+   829→                                                                                                                                                        Packaging                                                                       
+   830→                                                                                                                                        </a>
+   831→                                                        </li>
+   832→                                                                                        </ul>
+   833→                                </li>
+   834→                        </ul>
+   835→                                                </div>
+   836→                                </div>
+   837→                                </div>
+   838→                <div class="elementor-element elementor-element-55fca8a e-con-full e-flex e-con e-child" data-id="55fca8a" data-element_type="container" data-e-type="container">
+   839→                                <div class="elementor-element elementor-element-074166c elementor-widget elementor-widget-wd_extra_menu_list" data-id="074166c" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   840→                                <div class="elementor-widget-container">
+   841→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   842→                                <li class="item-with-label item-label-red">
+   843→                                        
+   844→                                        <ul class="sub-sub-menu">
+   845→                                                                                                        
+   846→                                                        <li class="item-with-label item-label-primary">
+   847→                                                                <a href="#">
+   848→                                                                                                                                                                                                                                
+   849→                                                                                                                                                        Factory Automation                                                                      
+   850→                                                                                                                                        </a>
+   851→                                                        </li>
+   852→                                                                                                        
+   853→                                                        <li class="item-with-label item-label-primary">
+   854→                                                                <a href="#">
+   855→                                                                                                                                                                                                                                
+   856→                                                                                                                                                        Automotive &amp; Transportation                                                                 
+   857→                                                                                                                                        </a>
+   858→                                                        </li>
+   859→                                                                                                        
+   860→                                                        <li class="item-with-label item-label-primary">
+   861→                                                                <a href="#">
+   862→                                                                                                                                                                                                                                
+   863→                                                                                                                                                        Renewable Energy                                                                        
+   864→                                                                                                                                        </a>
+   865→                                                        </li>
+   866→                                                                                                        
+   867→                                                        <li class="item-with-label item-label-primary">
+   868→                                                                <a href="#">
+   869→                                                                                                                                                                                                                                
+   870→                                                                                                                                                        Data Centers                                                                    
+   871→                                                                                                                                        </a>
+   872→                                                        </li>
+   873→                                                                                                        
+   874→                                                        <li class="item-with-label item-label-primary">
+   875→                                                                <a href="#">
+   876→                                                                                                                                                                                                                                
+   877→                                                                                                                                                        Cement                                                                  
+   878→                                                                                                                                        </a>
+   879→                                                        </li>
+   880→                                                                                                        
+   881→                                                        <li class="item-with-label item-label-primary">
+   882→                                                                <a href="#">
+   883→                                                                                                                                                                                                                                
+   884→                                                                                                                                                        Pharmaceutical                                                                  
+   885→                                                                                                                                        </a>
+   886→                                                        </li>
+   887→                                                                                                        
+   888→                                                        <li class="item-with-label item-label-primary">
+   889→                                                                <a href="#">
+   890→                                                                                                                                                                                                                                
+   891→                                                                                                                                                        Iron &amp; Steel                                                                        
+   892→                                                                                                                                        </a>
+   893→                                                        </li>
+   894→                                                                                                        
+   895→                                                        <li class="item-with-label item-label-primary">
+   896→                                                                <a>
+   897→                                                                                                                                                                                                                                
+   898→                                                                                                                                                        Battery Manufacturing                                                                   
+   899→                                                                                                                                        </a>
+   900→                                                        </li>
+   901→                                                                                        </ul>
+   902→                                </li>
+   903→                        </ul>
+   904→                                                </div>
+   905→                                </div>
+   906→                                </div>
+   907→                <div class="elementor-element elementor-element-e783688 e-con-full e-flex e-con e-child" data-id="e783688" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+   908→                                <div class="elementor-element elementor-element-3ee3f1a elementor-widget elementor-widget-wd_extra_menu_list" data-id="3ee3f1a" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   909→                                <div class="elementor-widget-container">
+   910→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   911→                                <li class="item-with-label item-label-primary">
+   912→                                                                                        <a>
+   913→                                                                                                                                                                                
+   914→                                                                                                                        Brands                                                  
+   915→                                                                                                        </a>
+   916→                                        
+   917→                                        <ul class="sub-sub-menu">
+   918→                                                                                                        
+   919→                                                        <li class="item-with-label item-label-primary">
+   920→                                                                <a href="#">
+   921→                                                                                                                                                                                                                                
+   922→                                                                                                                                                        Schubert &amp; Salzer (Germany)                                                                 
+   923→                                                                                                                                        </a>
+   924→                                                        </li>
+   925→                                                                                                        
+   926→                                                        <li class="item-with-label item-label-primary">
+   927→                                                                <a href="#">
+   928→                                                                                                                                                                                                                                
+   929→                                                                                                                                                        Clark Reliance (USA)                                                                    
+   930→                                                                                                                                        </a>
+   931→                                                        </li>
+   932→                                                                                                        
+   933→                                                        <li class="item-with-label item-label-primary">
+   934→                                                                <a href="#">
+   935→                                                                                                                                                                                                                                
+   936→                                                                                                                                                        Schmersal (Germany)                                                                     
+   937→                                                                                                                                        </a>
+   938→                                                        </li>
+   939→                                                                                                        
+   940→                                                        <li class="item-with-label item-label-black">
+   941→                                                                <a href="https://automationtechnology.com.pk/festo-germany/">
+   942→                                                                                                                                                                                                                                
+   943→                                                                                                                                                        Festo (Germany)                                                                 
+   944→                                                                                                                                        </a>
+   945→                                                        </li>
+   946→                                                                                                        
+   947→                                                        <li class="item-with-label item-label-primary">
+   948→                                                                <a href="#">
+   949→                                                                                                                                                                                                                                
+   950→                                                                                                                                                        Herolift  (China)                                                                       
+   951→                                                                                                                                        </a>
+   952→                                                        </li>
+   953→                                                                                                        
+   954→                                                        <li class="item-with-label item-label-primary">
+   955→                                                                <a href="#">
+   956→                                                                                                                                                                                                                                
+   957→                                                                                                                                                        SunCom (China)                                                                  
+   958→                                                                                                                                        </a>
+   959→                                                        </li>
+   960→                                                                                        </ul>
+   961→                                </li>
+   962→                        </ul>
+   963→                                                </div>
+   964→                                </div>
+   965→                                </div>
+   966→                                        </div>
+   967→                                </div>
+   968→                                </div>
+   969→                
+   970→</div>
+   971→
+   972→</div>
+   973→</li>
+   974→<li id="menu-item-28969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28969 item-level-0 menu-simple-dropdown wd-event-hover"><a href="https://automationtechnology.com.pk/portfolio/" class="woodmart-nav-link"><span class="nav-link-text">Support</span></a></li>
+   975→<li id="menu-item-28982" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28982 item-level-0 menu-mega-dropdown wd-event-hover menu-item-has-children dropdown-with-height" style="--wd-dropdown-height: 40px;--wd-dropdown-width: 1250px;"><a href="https://automationtechnology.com.pk/contact-us/" class="woodmart-nav-link"><span class="nav-link-text">Company</span></a>
+   976→<div class="wd-dropdown-menu wd-dropdown wd-design-sized color-scheme-dark">
+   977→
+   978→<div class="container wd-entry-content">
+   979→                        <link rel="stylesheet" id="elementor-post-29362-css" href="https://automationtechnology.com.pk/wp-content/uploads/elementor/css/post-29362.css?ver=1786072203" type="text/css" media="all">
+   980→                                        <div data-elementor-type="wp-post" data-elementor-id="29362" class="elementor elementor-29362">
+   981→                                <div class="wd-negative-gap elementor-element elementor-element-c9da916 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="c9da916" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+   982→                                        <div class="e-con-inner">
+   983→                <div class="elementor-element elementor-element-9dfa766 e-con-full e-flex e-con e-child" data-id="9dfa766" data-element_type="container" data-e-type="container">
+   984→                                <div class="elementor-element elementor-element-29ab65d elementor-widget elementor-widget-wd_extra_menu_list" data-id="29ab65d" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+   985→                                <div class="elementor-widget-container">
+   986→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+   987→                                <li class="item-with-label item-label-red">
+   988→                                                                                        <a href="#">
+   989→                                                                                                                                                                                
+   990→                                                                                                                        About Us                                                        
+   991→                                                                                                        </a>
+   992→                                        
+   993→                                        <ul class="sub-sub-menu">
+   994→                                                                                                        
+   995→                                                        <li class="item-with-label item-label-primary">
+   996→                                                                <a href="https://automationtechnology.com.pk/about-us1">
+   997→                                                                                                                                                                                                                                
+   998→                                                                                                                                                        About Automation Technology                                                                     
+   999→                                                                                                                                        </a>
+  1000→                                                        </li>
+  1001→                                                                                                        
+  1002→                                                        <li class="item-with-label item-label-primary">
+  1003→                                                                <a href="#">
+  1004→                                                                                                                                                                                                                                
+  1005→                                                                                                                                                        Leadership                                                                      
+  1006→                                                                                                                                        </a>
+  1007→                                                        </li>
+  1008→                                                                                                        
+  1009→                                                        <li class="item-with-label item-label-primary">
+  1010→                                                                <a href="#">
+  1011→                                                                                                                                                                                                                                
+  1012→                                                                                                                                                        Global Offices                                                                  
+  1013→                                                                                                                                        </a>
+  1014→                                                        </li>
+  1015→                                                                                                        
+  1016→                                                        <li class="item-with-label item-label-primary">
+  1017→                                                                <a href="#">
+  1018→                                                                                                                                                                                                                                
+  1019→                                                                                                                                                        Investor Relations                                                                      
+  1020→                                                                                                                                        </a>
+  1021→                                                        </li>
+  1022→                                                                                        </ul>
+  1023→                                </li>
+  1024→                        </ul>
+  1025→                                                </div>
+  1026→                                </div>
+  1027→                                </div>
+  1028→                <div class="elementor-element elementor-element-b0c5a19 e-con-full e-flex e-con e-child" data-id="b0c5a19" data-element_type="container" data-e-type="container">
+  1029→                                <div class="elementor-element elementor-element-23a6d6c elementor-widget elementor-widget-wd_extra_menu_list" data-id="23a6d6c" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+  1030→                                <div class="elementor-widget-container">
+  1031→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+  1032→                                <li class="item-with-label item-label-red">
+  1033→                                                                                        <a href="#">
+  1034→                                                                                                                                                                                
+  1035→                                                                                                                        Careers                                                 
+  1036→                                                                                                        </a>
+  1037→                                        
+  1038→                                        <ul class="sub-sub-menu">
+  1039→                                                                                                        
+  1040→                                                        <li class="item-with-label item-label-primary">
+  1041→                                                                <a href="#">
+  1042→                                                                                                                                                                                                                                
+  1043→                                                                                                                                                        Life at Automation Technology                                                                   
+  1044→                                                                                                                                        </a>
+  1045→                                                        </li>
+  1046→                                                                                                        
+  1047→                                                        <li class="item-with-label item-label-primary">
+  1048→                                                                <a href="#">
+  1049→                                                                                                                                                                                                                                
+  1050→                                                                                                                                                        Early careers                                                                   
+  1051→                                                                                                                                        </a>
+  1052→                                                        </li>
+  1053→                                                                                                        
+  1054→                                                        <li class="item-with-label item-label-primary">
+  1055→                                                                <a href="#">
+  1056→                                                                                                                                                                                                                                
+  1057→                                                                                                                                                        Benefits                                                                        
+  1058→                                                                                                                                        </a>
+  1059→                                                        </li>
+  1060→                                                                                                        
+  1061→                                                        <li class="item-with-label item-label-primary">
+  1062→                                                                <a href="#">
+  1063→                                                                                                                                                                                                                                
+  1064→                                                                                                                                                        How we hire                                                                     
+  1065→                                                                                                                                        </a>
+  1066→                                                        </li>
+  1067→                                                                                                        
+  1068→                                                        <li class="item-with-label item-label-primary">
+  1069→                                                                <a href="#">
+  1070→                                                                                                                                                                                                                                
+  1071→                                                                                                                                                           Current opportunities                                                                        
+  1072→                                                                                                                                        </a>
+  1073→                                                        </li>
+  1074→                                                                                        </ul>
+  1075→                                </li>
+  1076→                        </ul>
+  1077→                                                </div>
+  1078→                                </div>
+  1079→                                </div>
+  1080→                <div class="elementor-element elementor-element-23c3eec e-con-full e-flex e-con e-child" data-id="23c3eec" data-element_type="container" data-e-type="container">
+  1081→                                <div class="elementor-element elementor-element-c30329f elementor-widget__width-initial elementor-widget elementor-widget-wd_extra_menu_list" data-id="c30329f" data-element_type="widget" data-e-type="widget" data-widget_type="wd_extra_menu_list.default">
+  1082→                                <div class="elementor-widget-container">
+  1083→                                                                <ul class="wd-sub-menu wd-sub-accented mega-menu-list">
+  1084→                                <li class="item-with-label item-label-red">
+  1085→                                                                                        <a href="#">
+  1086→                                                                                                                                                                                
+  1087→                                                                                                                        Learning and Support                                                    
+  1088→                                                                                                        </a>
+  1089→                                        
+  1090→                                        <ul class="sub-sub-menu">
+  1091→                                                                                                        
+  1092→                                                        <li class="item-with-label item-label-primary">
+  1093→                                                                <a href="#">
+  1094→                                                                                                                                                                                                                                
+  1095→                                                                                                                                                        Technical Support                                                                       
+  1096→                                                                                                                                        </a>
+  1097→                                                        </li>
+  1098→                                                                                                        
+  1099→                                                        <li class="item-with-label item-label-primary">
+  1100→                                                                <a href="#">
+  1101→                                                                                                                                                                                                                                
+  1102→                                                                                                                                                        Support and Success                                                                     
+  1103→                                                                                                                                        </a>
+  1104→                                                        </li>
+  1105→                                                                                                        
+  1106→                                                        <li class="item-with-label item-label-primary">
+  1107→                                                                <a href="#">
+  1108→                                                                                                                                                                                                                                
+  1109→                                                                                                                                                        Trainings                                                                       
+  1110→                                                                                                                                        </a>
+  1111→                                                        </li>
+  1112→                                                                                                        
+  1113→                                                        <li class="item-with-label item-label-primary">
+  1114→                                                                <a href="#">
+  1115→                                                                                                                                                                                                                                
+  1116→                                                                                                                                                        Web Seminars                                                                    
+  1117→                                                                                                                                        </a>
+  1118→                                                        </li>
+  1119→                                                                                                        
+  1120→                                                        <li class="item-with-label item-label-primary">
+  1121→                                                                <a href="#">
+  1122→                                                                                                                                                                                                                                
+  1123→                                                                                                                                                        Documentations &amp; Downloads                                                                  
+  1124→                                                                                                                                        </a>
+  1125→                                                        </li>
+  1126→                                                                                        </ul>
+  1127→                                </li>
+  1128→                        </ul>
+  1129→                                                </div>
+  1130→                                </div>
+  1131→                                </div>
+  1132→                <div class="elementor-element elementor-element-51ba953 e-con-full e-flex e-con e-child" data-id="51ba953" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+  1133→                                <div class="elementor-element elementor-element-c813726 wd-width-100 elementor-widget elementor-widget-wd_title" data-id="c813726" data-element_type="widget" data-e-type="widget" data-widget_type="wd_title.default">
+  1134→                                <div class="elementor-widget-container">
+  1135→                                                        <div class="title-wrapper wd-set-mb reset-last-child wd-title-color-default wd-title-style-default wd-title-size-large text-left">
+  1136→
+  1137→                        
+  1138→                        <div class="liner-continer">
+  1139→                                <h4 class="woodmart-title-container title wd-fontsize-xxl">Need help?<br>
+  1140→Feel free contact us</h4> 
+  1141→                                                        </div>
+  1142→
+  1143→                                                        <div class="title-after_title reset-last-child wd-fontsize-s">
+  1144→                                        <p>Our mission is to empowers businesses off all size in an businesses.</p>                             </div>
+  1145→                                        </div>
+  1146→                                                </div>
+  1147→                                </div>
+  1148→                                <div class="elementor-element elementor-element-6ec9ff9 elementor-widget elementor-widget-wd_button" data-id="6ec9ff9" data-element_type="widget" data-e-type="widget" data-widget_type="wd_button.default">
+  1149→                                <div class="elementor-widget-container">
+  1150→                                                        <div class="wd-button-wrapper text-left">
+  1151→                        <a class="btn btn-style-default btn-shape-semi-round btn-size-default btn-color-primary btn-icon-pos-right" href="#">
+  1152→                                <span class="wd-btn-text" data-elementor-setting-key="text">
+  1153→                                        Read more                               </span>
+  1154→
+  1155→                                                        </a>
+  1156→                </div>
+  1157→                                                </div>
+  1158→                                </div>
+  1159→                                </div>
+  1160→                                        </div>
+  1161→                                </div>
+  1162→                                </div>
+  1163→                
+  1164→</div>
+  1165→
+  1166→</div>
+  1167→</li>
+  1168→</ul>
+  1169→---SEPARATOR---
+  1170→Contact US
