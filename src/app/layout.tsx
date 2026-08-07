@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 const notoSans = Noto_Sans({
@@ -42,8 +44,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${notoSans.variable} antialiased`}>
-        {children}
+      <body className={`${notoSans.variable} antialiased flex flex-col min-h-screen`}>
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
