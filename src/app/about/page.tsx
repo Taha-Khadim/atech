@@ -96,22 +96,23 @@ export default function AboutPage() {
       <section className="py-14 bg-white" id="leadership">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading title="Our Leadership" subtitle="Meet the people driving Automation Technology's growth and innovation." />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 max-w-4xl mx-auto items-stretch">
             {leaders.map((leader) => (
-              <div key={leader.name} className="border border-[#e0e0e0] overflow-hidden hover:shadow-md transition-shadow">
-                <div className="h-56 relative overflow-hidden">
+              <div key={leader.name} className="border border-[#e0e0e0] overflow-hidden hover:shadow-lg transition-all flex flex-col">
+                <div className="h-72 relative overflow-hidden bg-[#f0f0f0]">
                   <Image
                     src={leader.image}
                     alt={leader.name}
                     fill
                     className="object-cover object-top"
+                    style={{ objectPosition: 'top center' }}
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
-                <div className="p-5">
+                <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-[16px] font-semibold text-[#1a1a1a]">{leader.name}</h3>
-                  <p className="text-[12px] text-[#003da5] font-medium uppercase tracking-wide mb-2">{leader.title}</p>
-                  <p className="text-[13px] text-[#666] leading-relaxed">{leader.bio}</p>
+                  <p className="text-[12px] text-[#003da5] font-medium uppercase tracking-wide mb-3">{leader.title}</p>
+                  <p className="text-[13px] text-[#666] leading-relaxed flex-1">{leader.bio}</p>
                 </div>
               </div>
             ))}

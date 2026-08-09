@@ -28,72 +28,78 @@ export default function ContactForm() {
     );
   }
 
+  const inputClasses = 'w-full px-3 py-2.5 border border-[#ddd] text-[13px] text-[#222] focus:outline-none focus:border-[#003da5] focus:ring-1 focus:ring-[#003da5]/30 bg-white placeholder:text-[#aaa] transition-colors';
+
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-[12px] font-medium text-[#333] mb-1">Full Name *</label>
+          <label className="block text-[12px] font-medium text-[#333] mb-1.5">Full Name <span className="text-red-500">*</span></label>
           <input
             type="text"
             required
-            className="w-full px-3 py-2 border border-[#e0e0e0] text-[13px] text-[#222] focus:outline-none focus:border-[#003da5] focus:ring-1 focus:ring-[#003da5]/30 bg-white"
+            className={inputClasses}
             placeholder="John Smith"
           />
         </div>
         <div>
-          <label className="block text-[12px] font-medium text-[#333] mb-1">Email *</label>
+          <label className="block text-[12px] font-medium text-[#333] mb-1.5">Email <span className="text-red-500">*</span></label>
           <input
             type="email"
             required
-            className="w-full px-3 py-2 border border-[#e0e0e0] text-[13px] text-[#222] focus:outline-none focus:border-[#003da5] focus:ring-1 focus:ring-[#003da5]/30 bg-white"
+            className={inputClasses}
             placeholder="john@company.com"
           />
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-[12px] font-medium text-[#333] mb-1">Phone</label>
+          <label className="block text-[12px] font-medium text-[#333] mb-1.5">Phone</label>
           <input
             type="tel"
-            className="w-full px-3 py-2 border border-[#e0e0e0] text-[13px] text-[#222] focus:outline-none focus:border-[#003da5] focus:ring-1 focus:ring-[#003da5]/30 bg-white"
+            className={inputClasses}
             placeholder="+92-XXX-XXXXXXX"
           />
         </div>
         <div>
-          <label className="block text-[12px] font-medium text-[#333] mb-1">Company</label>
+          <label className="block text-[12px] font-medium text-[#333] mb-1.5">Company</label>
           <input
             type="text"
-            className="w-full px-3 py-2 border border-[#e0e0e0] text-[13px] text-[#222] focus:outline-none focus:border-[#003da5] focus:ring-1 focus:ring-[#003da5]/30 bg-white"
+            className={inputClasses}
             placeholder="Company Name"
           />
         </div>
       </div>
-      <div>
-        <label className="block text-[12px] font-medium text-[#333] mb-1">Subject *</label>
-        <input
-          type="text"
-          required
-          className="w-full px-3 py-2 border border-[#e0e0e0] text-[13px] text-[#222] focus:outline-none focus:border-[#003da5] focus:ring-1 focus:ring-[#003da5]/30 bg-white"
-          placeholder="How can we help?"
-        />
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="sm:col-span-2">
+          <label className="block text-[12px] font-medium text-[#333] mb-1.5">Subject <span className="text-red-500">*</span></label>
+          <input
+            type="text"
+            required
+            className={inputClasses}
+            placeholder="How can we help?"
+          />
+        </div>
       </div>
       <div>
-        <label className="block text-[12px] font-medium text-[#333] mb-1">Message *</label>
+        <label className="block text-[12px] font-medium text-[#333] mb-1.5">Message <span className="text-red-500">*</span></label>
         <textarea
           required
           rows={5}
-          className="w-full px-3 py-2 border border-[#e0e0e0] text-[13px] text-[#222] focus:outline-none focus:border-[#003da5] focus:ring-1 focus:ring-[#003da5]/30 bg-white resize-none"
+          className={inputClasses + ' resize-none'}
           placeholder="Tell us about your requirements..."
         />
       </div>
-      <button
-        type="submit"
-        disabled={loading}
-        className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#00aa73] text-white text-[13px] font-semibold uppercase tracking-wide hover:bg-[#009663] transition-colors disabled:opacity-50"
-      >
-        {loading ? 'Sending...' : 'Send Message'}
-        <Send size={14} />
-      </button>
+      <div className="pt-1">
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 bg-[#00aa73] text-white text-[13px] font-semibold uppercase tracking-wide hover:bg-[#009663] transition-colors disabled:opacity-50"
+        >
+          {loading ? 'Sending...' : 'Send Message'}
+          <Send size={14} />
+        </button>
+      </div>
     </form>
   );
 }
