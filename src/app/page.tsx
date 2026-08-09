@@ -26,31 +26,64 @@ const features = [
 export default function HomePage() {
   return (
     <>
-      {/* Hero Carousel */}
-      <section className="relative text-white overflow-hidden">
+      {/* Hero - Animated */}
+      <section className="relative text-white overflow-hidden min-h-[480px] md:min-h-[560px]">
+        {/* Background image with Ken Burns zoom effect */}
         <div className="absolute inset-0">
-          <Image src="/images/hero/image-2.jpg" alt="Automation Technology" fill className="object-cover" priority sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/90 via-[#0a1628]/60 to-transparent" />
+          <Image
+            src="/images/hero/image-2.jpg"
+            alt="Automation Technology"
+            fill
+            className="object-cover hero-kenburns"
+            priority
+            sizes="100vw"
+          />
         </div>
-        <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 flex items-center min-h-[400px]">
+
+        {/* Animated gradient overlay - shifts colors subtly */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/92 via-[#0d2240]/65 to-[#003da5]/30 hero-gradient-animate" />
+
+        {/* Floating tech particles */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="hero-float-dot absolute top-[15%] right-[20%] w-1.5 h-1.5 rounded-full bg-blue-400/40" style={{ animationDelay: '0s' }} />
+          <div className="hero-float-dot absolute top-[35%] right-[35%] w-1 h-1 rounded-full bg-cyan-300/30" style={{ animationDelay: '1.5s' }} />
+          <div className="hero-float-dot absolute top-[60%] right-[15%] w-2 h-2 rounded-full bg-blue-500/25" style={{ animationDelay: '3s' }} />
+          <div className="hero-float-dot absolute top-[25%] right-[50%] w-1 h-1 rounded-full bg-white/20" style={{ animationDelay: '2s' }} />
+          <div className="hero-float-dot absolute top-[75%] right-[40%] w-1.5 h-1.5 rounded-full bg-cyan-400/30" style={{ animationDelay: '4s' }} />
+          <div className="hero-float-dot absolute top-[45%] right-[60%] w-1 h-1 rounded-full bg-blue-300/20" style={{ animationDelay: '1s' }} />
+          <div className="hero-float-dot absolute top-[80%] right-[25%] w-2 h-2 rounded-full bg-white/15" style={{ animationDelay: '3.5s' }} />
+          {/* Pulse rings */}
+          <div className="hero-pulse-ring absolute top-[30%] right-[25%] w-16 h-16 rounded-full border border-blue-400/20" style={{ animationDelay: '0s' }} />
+          <div className="hero-pulse-ring absolute top-[55%] right-[45%] w-24 h-24 rounded-full border border-cyan-400/15" style={{ animationDelay: '1.5s' }} />
+          <div className="hero-pulse-ring absolute top-[70%] right-[20%] w-12 h-12 rounded-full border border-blue-300/20" style={{ animationDelay: '3s' }} />
+        </div>
+
+        {/* Bottom fade edge */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent" />
+
+        {/* Content with staggered slide-up animation */}
+        <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex items-center min-h-[480px] md:min-h-[560px]">
           <div className="max-w-2xl">
-            <p className="text-[11px] uppercase tracking-[0.2em] text-blue-300 font-medium mb-3">Industrial Automation & Instrumentation</p>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-              Open New Automation Mind
+            <p className="hero-slide-up hero-slide-up-delay-1 text-[11px] uppercase tracking-[0.2em] text-blue-300 font-medium mb-3">
+              Industrial Automation &amp; Instrumentation
+            </p>
+            <h1 className="hero-slide-up hero-slide-up-delay-2 text-3xl md:text-4xl lg:text-[52px] font-bold leading-[1.1] mb-5">
+              Open New<br />Automation Mind
             </h1>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-6 max-w-xl">
+            <p className="hero-slide-up hero-slide-up-delay-3 text-sm md:text-[15px] text-gray-300 leading-relaxed mb-8 max-w-xl">
               Automation Technology combines advanced technologies, industry-leading expertise and an insatiable curiosity about the world to create sustainable solutions for our customers.
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="hero-slide-up hero-slide-up-delay-4 flex flex-wrap gap-3">
               <Link
                 href="/products"
-                className="inline-flex items-center px-6 py-2.5 bg-[#00aa73] text-white text-[13px] font-semibold uppercase tracking-wide hover:bg-[#009663] transition-colors"
+                className="group relative inline-flex items-center px-7 py-3 bg-[#00aa73] text-white text-[13px] font-semibold uppercase tracking-wide hover:bg-[#009663] transition-all overflow-hidden"
               >
-                Explore Products
+                <span className="relative z-10">Explore Products</span>
+                <div className="absolute inset-0 bg-white/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center px-6 py-2.5 border border-white/30 text-white text-[13px] font-semibold uppercase tracking-wide hover:bg-white/10 transition-colors"
+                className="inline-flex items-center px-7 py-3 border border-white/30 text-white text-[13px] font-semibold uppercase tracking-wide hover:bg-white/10 hover:border-white/50 transition-all backdrop-blur-sm"
               >
                 Contact Us
               </Link>
