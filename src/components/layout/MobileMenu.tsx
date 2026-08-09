@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { X, ChevronDown, ChevronRight } from 'lucide-react';
 import { mainNavItems } from '@/data/navigation';
-import type { NavItem, NavColumn, NavChild } from '@/data/navigation';
+import type { NavItem, NavChild, NavAsideCategory } from '@/data/navigation';
 
 interface MobileMenuProps {
   open: boolean;
@@ -49,7 +49,7 @@ function MobileNavItem({ item, expanded, onToggle, onClose }: { item: NavItem; e
         <Link
           href={item.href}
           onClick={onClose}
-          className="text-[12px] font-semibold uppercase tracking-wide text-[#222] hover:text-[#003da5]"
+          className="text-[12px] font-bold uppercase tracking-normal text-[#409BEC] hover:text-[#333]"
         >
           {item.label}
         </Link>
@@ -59,20 +59,20 @@ function MobileNavItem({ item, expanded, onToggle, onClose }: { item: NavItem; e
           </button>
         )}
       </div>
-      {expanded && item.hasDropdown && item.dropdownType === 'mega' && item.megaColumns && (
+      {expanded && item.hasDropdown && item.dropdownType === 'mega-aside' && item.asideCategories && (
         <div className="bg-[#f7f8fa] border-t border-[#e0e0e0]">
-          {item.megaColumns.map((col: NavColumn) => (
-            <div key={col.title} className="px-4 py-2">
-              <p className="text-[10px] font-bold uppercase text-[#999] tracking-widest mb-1">{col.title}</p>
-              {col.groups.map((group) => (
-                <div key={group.heading} className="mb-2">
-                  <p className="text-[9px] font-bold text-[#bbb] uppercase tracking-wider mb-0.5">{group.heading}</p>
-                  {group.children.map((child: NavChild) => (
+          {item.asideCategories.map((cat: NavAsideCategory) => (
+            <div key={cat.label} className="px-4 py-2">
+              <p className="text-[11px] font-semibold text-[#1a1a1a] mb-1">{cat.label}</p>
+              {cat.sections.map((section) => (
+                <div key={section.heading} className="mb-2">
+                  <p className="text-[9px] font-bold text-[#999] uppercase tracking-widest mb-0.5">{section.heading}</p>
+                  {section.items.map((child: NavChild) => (
                     <Link
                       key={child.label + child.href}
                       href={child.href}
                       onClick={onClose}
-                      className="block py-1 text-[13px] text-[#444] hover:text-[#003da5]"
+                      className="block py-1 text-[13px] text-[#555] hover:text-[#409BEC]"
                     >
                       {child.label}
                     </Link>
@@ -81,22 +81,6 @@ function MobileNavItem({ item, expanded, onToggle, onClose }: { item: NavItem; e
               ))}
             </div>
           ))}
-        </div>
-      )}
-      {expanded && item.hasDropdown && item.dropdownType === 'simple' && item.simpleLinks && (
-        <div className="bg-[#f7f8fa] border-t border-[#e0e0e0]">
-          <div className="px-4 py-2">
-            {item.simpleLinks.map((link: NavChild) => (
-              <Link
-                key={link.label + link.href}
-                href={link.href}
-                onClick={onClose}
-                className="block py-1.5 text-[13px] text-[#444] hover:text-[#003da5]"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
         </div>
       )}
     </div>

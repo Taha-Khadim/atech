@@ -67,7 +67,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[280px] overflow-hidden">
               <Image
-                src="/images/about-portfolio.webp"
+                src="/images/hero/what.webp"
                 alt="Automation Technology Portfolio"
                 fill
                 className="object-cover"

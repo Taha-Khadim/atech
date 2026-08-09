@@ -24,7 +24,7 @@ const festoCategories: FestoCategory[] = [
     id: 'actuators',
     title: 'Actuators & Drives',
     icon: Cog,
-    image: '/images/festo/pneumatic.jpg',
+    image: '/images/festo/FESTOpnumatic.jpg',
     items: [
       { name: 'Pneumatic Cylinders – Piston Rod', link: 'https://www.festo.com/us/en/p/pneumatic-cylinders_p_102497/' },
       { name: 'Round Cylinders', link: 'https://www.festo.com/us/en/p/pneumatic-cylinders-round_p_102530/' },
@@ -41,7 +41,7 @@ const festoCategories: FestoCategory[] = [
     id: 'valves',
     title: 'Valves & Valve Manifolds',
     icon: Disc,
-    image: '/images/festo/valves.jpg',
+    image: '/images/festo/VALVES.jpg',
     items: [
       { name: 'Solenoid Valves', link: 'https://www.festo.com/us/en/p/solenoid-valves_p_102660/' },
       { name: 'Valve Terminals (VTUX)', link: 'https://www.festo.com/us/en/p/valve-terminals_p_102670/' },
@@ -85,7 +85,7 @@ const festoCategories: FestoCategory[] = [
     id: 'electric-drives',
     title: 'Electric Drives & Controls',
     icon: Zap,
-    image: '/images/festo/electric.jpg',
+    image: '/images/festo/ELECTRO.jpg',
     items: [
       { name: 'Servo Motors', link: 'https://www.festo.com/us/en/p/servo-motors_p_102950/' },
       { name: 'Stepper Motors', link: 'https://www.festo.com/us/en/p/stepper-motors_p_102960/' },
@@ -97,7 +97,7 @@ const festoCategories: FestoCategory[] = [
     id: 'handling',
     title: 'Handling & Assembly',
     icon: Hand,
-    image: '/images/festo/handling.webp',
+    image: '/images/festo/servo.jpg',
     items: [
       { name: 'Handling Systems', link: 'https://www.festo.com/us/en/p/handling-systems_p_103000/' },
       { name: 'Linear Guides', link: 'https://www.festo.com/us/en/p/linear-guides_p_103010/' },
@@ -112,8 +112,8 @@ export default function FestoPage() {
     <>
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#0a1628] via-[#0f2847] to-[#e20015] text-white relative">
-        <div className="absolute inset-0 opacity-20">
-          <Image src="/images/festo/hero.webp" alt="Festo" fill className="object-cover" />
+        <div className="absolute inset-0 opacity-30">
+          <Image src="/images/festo/FESTOpnumatic.jpg" alt="Festo Pneumatic Systems" fill className="object-cover" />
         </div>
         <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 flex items-center min-h-[320px]">
           <div className="max-w-2xl">
@@ -217,6 +217,26 @@ export default function FestoPage() {
               <FileText size={16} />
               Download Certificate (PDF)
             </a>
+            <div className="flex flex-wrap gap-3 justify-center mt-4">
+              <a
+                href="/certificate/company-profile-festo.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2 border border-[#003da5] text-[#003da5] text-[12px] font-semibold hover:bg-[#003da5] hover:text-white transition-colors"
+              >
+                <FileText size={14} />
+                Company Profile
+              </a>
+              <a
+                href="/certificate/introduction-process-automation-festo.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2 border border-[#003da5] text-[#003da5] text-[12px] font-semibold hover:bg-[#003da5] hover:text-white transition-colors"
+              >
+                <FileText size={14} />
+                Process Automation Guide
+              </a>
+            </div>
           </div>
         </div>
       </section>

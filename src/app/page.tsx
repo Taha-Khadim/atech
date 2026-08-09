@@ -11,9 +11,9 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 const serviceImages: Record<string, string> = {
-  'Measurement Solutions': '/images/services/measurement.jpg',
-  'Project Execution Services': '/images/services/project-execution.jpg',
-  'Discrete Automation': '/images/services/discrete-automation.jpg',
+  'Measurement Solutions': '/images/hero/measurments.jpg',
+  'Project Execution Services': '/images/hero/project.jpg',
+  'Discrete Automation': '/images/hero/Discrete-Automation.jpg',
 };
 
 const features = [
@@ -26,9 +26,12 @@ const features = [
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative bg-gradient-to-br from-[#0a1628] via-[#0f2847] to-[#003da5] text-white">
-        <div className="absolute inset-0 opacity-20 bg-[url('/images/hero/hero-1.jpg')] bg-cover bg-center" />
+      {/* Hero Carousel */}
+      <section className="relative text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/images/hero/image-2.jpg" alt="Automation Technology" fill className="object-cover" priority sizes="100vw" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/90 via-[#0a1628]/60 to-transparent" />
+        </div>
         <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 flex items-center min-h-[400px]">
           <div className="max-w-2xl">
             <p className="text-[11px] uppercase tracking-[0.2em] text-blue-300 font-medium mb-3">Industrial Automation & Instrumentation</p>
@@ -36,7 +39,7 @@ export default function HomePage() {
               Open New Automation Mind
             </h1>
             <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-6 max-w-xl">
-              Pakistan&apos;s leading supplier of Industrial Automation, Pneumatic, Hydraulic, Filtration and Motion Control Equipment. Authorized Festo distributor.
+              Automation Technology combines advanced technologies, industry-leading expertise and an insatiable curiosity about the world to create sustainable solutions for our customers.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link

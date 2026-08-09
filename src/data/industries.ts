@@ -17,7 +17,7 @@ export const industries: Industry[] = [
     title: 'Oil & Gas',
     shortDescription: 'Comprehensive automation and measurement solutions for upstream, midstream and downstream operations.',
     fullDescription: 'Automation Technology delivers end-to-end instrumentation and automation solutions for the oil & gas industry. From wellhead monitoring to refinery process control, our products and services ensure safe, efficient and compliant operations across the entire value chain. We partner with world-leading manufacturers to bring the best technology to Pakistan\'s oil & gas sector.',
-    image: '/images/industries/oil-gas.jpg',
+    image: '/images/hero/indus-oil-gas.jpg',
     gradient: 'from-amber-900 to-yellow-800',
     iconLetter: 'OG',
     applications: [
@@ -43,7 +43,7 @@ export const industries: Industry[] = [
     title: 'Power',
     shortDescription: 'Reliable measurement and control solutions for power generation, transmission and distribution.',
     fullDescription: 'The power industry demands the highest levels of reliability and precision. Automation Technology provides comprehensive instrumentation and control solutions for thermal, hydro and renewable power plants. Our solutions help optimize efficiency, reduce downtime and ensure safety across all power generation and distribution operations in Pakistan.',
-    image: '/images/industries/power.jpg',
+    image: '/images/hero/image-2.jpg',
     gradient: 'from-blue-900 to-cyan-800',
     iconLetter: 'PW',
     applications: [
@@ -69,7 +69,7 @@ export const industries: Industry[] = [
     title: 'Mining & Metal',
     shortDescription: 'Rugged automation and instrumentation solutions for extraction, processing and refining.',
     fullDescription: 'Mining and metal processing environments are among the harshest on earth. Automation Technology supplies instruments and automation systems engineered to withstand extreme conditions while delivering accurate and reliable measurements. From mine-to-mill to final product quality control, we help optimize every stage of the mining and metals value chain.',
-    image: '/images/industries/chemical.jpg',
+    image: '/images/hero/indus-oil-gas.jpg',
     gradient: 'from-gray-800 to-gray-700',
     iconLetter: 'MM',
     applications: [
@@ -95,7 +95,7 @@ export const industries: Industry[] = [
     title: 'Food & Beverage',
     shortDescription: 'Hygienic automation solutions meeting FDA and food safety standards for processing and packaging.',
     fullDescription: 'The food and beverage industry requires hygienic, reliable and compliant instrumentation. Automation Technology provides a full range of measurement and automation solutions that meet FDA, EHEDG and other food safety standards. From raw material reception to final product packaging, we ensure quality, safety and efficiency throughout your production process.',
-    image: '/images/industries/generic.jpg',
+    image: '/images/hero/indus-oil-gas.jpg',
     gradient: 'from-green-900 to-emerald-800',
     iconLetter: 'FB',
     applications: [
@@ -121,7 +121,7 @@ export const industries: Industry[] = [
     title: 'Pulp & Paper',
     shortDescription: 'Process optimization and quality control solutions for the pulp and paper industry.',
     fullDescription: 'The pulp and paper industry is energy-intensive and requires precise control of multiple process variables. Automation Technology delivers measurement and automation solutions that optimize energy consumption, improve product quality and reduce waste. From wood handling to finished product, our solutions cover every stage of the pulp and paper manufacturing process.',
-    image: '/images/industries/pulp-paper.jpg',
+    image: '/images/hero/indus-oil-gas.jpg',
     gradient: 'from-stone-800 to-amber-900',
     iconLetter: 'PP',
     applications: [
